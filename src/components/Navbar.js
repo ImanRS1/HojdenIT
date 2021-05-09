@@ -21,11 +21,11 @@ export default function Navbar() {
 }
 
 const NavbarWrapper = styled.div`
-  position: absolute;
   z-index: 99;
   top: 0;
   left: 0;
   width: 100%;
+  position: fixed;
   /* background-color: #5f5f5f; */
 `
 
