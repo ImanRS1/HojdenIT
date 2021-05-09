@@ -1,17 +1,18 @@
 import React from "react"
 import styled from "styled-components"
 import cLogo from "../images/HöjdenITLogo.png"
+import "../styles/typography.css"
 
 export default function Navbar() {
   return (
     <NavbarWrapper>
       <NavbarContainer>
         <img src={cLogo} />
-        <NavList>
+        <NavList className="NavList">
           <ul>
             <li>OM OSS</li>
-            <li>Våra tjänster</li>
-            <li>Kontakt</li>
+            <li>VÅRA TJÄNSTER</li>
+            <li>KONTAKT</li>
           </ul>
         </NavList>
       </NavbarContainer>
@@ -45,6 +46,8 @@ const NavList = styled.div`
   width: 50%;
   display: flex;
   align-items: center;
+  font-family: "AllertaStencil";
+  font-size: 1.5rem;
   ul {
     width: 100%;
     display: flex;
