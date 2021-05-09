@@ -10,7 +10,6 @@ export default function LandingPage() {
 }
 
 const LandingPageWrapper = styled.div`
-  background-color: maroon;
   height: 100vh;
   width: 100vw;
 `

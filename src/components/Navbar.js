@@ -7,6 +7,13 @@ export default function Navbar() {
     <NavbarWrapper>
       <NavbarContainer>
         <img src={cLogo} />
+        <NavList>
+          <ul>
+            <li>OM OSS</li>
+            <li>Våra tjänster</li>
+            <li>Kontakt</li>
+          </ul>
+        </NavList>
       </NavbarContainer>
     </NavbarWrapper>
   )
@@ -18,16 +25,31 @@ const NavbarWrapper = styled.div`
   top: 0;
   left: 0;
   width: 100%;
+  /* background-color: #5f5f5f; */
 `
 
 const NavbarContainer = styled.div`
   max-width: 1200px;
+  position: sticky;
   margin: 0 auto;
   height: 100%;
-  z-index: 1;
+  display: flex;
+  justify-content: space-between;
 
   img {
     height: 10rem;
-    z-index: 1;
+  }
+`
+
+const NavList = styled.div`
+  width: 50%;
+  display: flex;
+  align-items: center;
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  li {
   }
 `

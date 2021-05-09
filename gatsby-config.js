@@ -6,5 +6,18 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts-v2`,
+      options: {
+        fonts: [
+          {
+            family: "Sacramento",
+            variable: true,
+            weights: ["200..900"],
+          },
+        ],
+      },
+    },
+  ],
 }

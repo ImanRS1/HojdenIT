@@ -37,7 +37,8 @@ export default function Home() {
 }
 
 const MainWrapper = styled.div`
-  background-color: #282828;
+  /* background-color: #282828; */
+  background-image: linear-gradient(to bottom left, #2599f8, #282828);
   height: 100%;
   width: 100%;
 `
