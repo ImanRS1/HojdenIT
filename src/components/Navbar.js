@@ -1,7 +1,18 @@
 import React from "react"
 import styled from "styled-components"
-import cLogo from "../images/HöjdenITLogo.png"
+import cLogo from "../images/HöjdenITLogo-white.png"
 import "../styles/typography.css"
+
+import { useViewportScroll } from "framer-motion"
+
+const Nav = () => {
+  const { scrollY } = useViewportScroll()
+
+  scrollY.onChange(y => {
+    // y = scroll position
+    //Do Something
+  })
+}
 
 export default function Navbar() {
   return (
