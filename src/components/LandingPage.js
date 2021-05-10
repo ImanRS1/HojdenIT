@@ -7,7 +7,7 @@ export default function LandingPage() {
     <div>
       <LandingPageWrapper>
         <BackGImage>
-          <img src={backGImage} />
+          <img className="bPic" src={backGImage} />
         </BackGImage>
       </LandingPageWrapper>
     </div>
@@ -18,7 +18,7 @@ const BackGImage = styled.div`
   height: 100%;
   width: 100%;
   overflow-y: hidden;
-  img {
+  .bPic {
     height: 100%;
     width: 100%;
     overflow-y: hidden;

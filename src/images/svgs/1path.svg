@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:se="http://svg-edit.googlecode.com" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="169.70329658237426" height="289.9010988607914" style="">                                    <title>my vector image</title>                                    <!-- Created with Vector Paint - http://www.vectorpaint.yaks.com/ https://chrome.google.com/webstore/detail/hnbpdiengicdefcjecjbnjnoifekhgdo -->                                    <rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="#FFFFFF" stroke="none"/>                                <g class="currentLayer" style=""><title>Layer 1</title><path fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" stroke-width="6" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" id="svg_2" d="M420.8703790816236,167.9340660291917 " style="color: rgb(0, 0, 0);" class=""/><path fill="#000000" fill-opacity="1" stroke="#222222" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" id="svg_5" d="M808.7824758500651,89.36263402276195 " style="color: rgb(0, 0, 0);" class=""/><path fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" id="svg_3" d="M529.112141293666,112.98900906876409 " style="color: rgb(0, 0, 0);" class=""/><path fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" stroke-width="2" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" id="svg_4" d="M815.9253332549207,82.76922718751064 " style="color: rgb(0, 0, 0);" class=""/><path fill="none" fill-opacity="1" stroke="#ffffff" stroke-opacity="1" stroke-width="4" stroke-dasharray="none" stroke-linejoin="round" stroke-linecap="butt" stroke-dashoffset="" fill-rule="nonzero" opacity="1" marker-start="" marker-mid="" marker-end="" id="svg_10" d="M172.51870677246097,2.0000000015258763 C-23.63514322753906,56.94506000152589 33.679106772460955,122.26371000152585 49.252756772460884,140.1538400015259 C64.82639677246095,158.04396000152587 126.36485677246094,209.6923200015259 99.99123677246098,248.15386000152586 C73.61760677246093,286.6153900015259 35.32745677246089,283.2527500015259 15.186806772460955,284.10989000152586 C-4.953843227539096,284.96703000152587 20.320906772460944,283.8681400015259 -1.2967032275390693,284.10989000152586 " style="color: rgb(0, 0, 0);" class=""/></g></svg>
+<svg
+  width="169.70329658237426"
+  height="289.9010988607914"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g class="currentLayer">
+    <title>Layer 1</title>
+
+    <path
+      d="m172.51871,2c-196.15385,54.94506 -138.8396,120.26371 -123.26595,138.15384c15.57364,17.89012 77.1121,69.53848 50.73848,108.00002c-26.37363,38.46153 -64.66378,35.09889 -84.80443,35.95603c-20.14065,0.85714 5.1341,-0.24175 -16.48351,0"
+      id="svg_10"
+      fill-rule="nonzero"
+      stroke-linejoin="round"
+      stroke-width="5"
+      stroke="#ffffff"
+      fill="none"
+    />
+  </g>
+</svg>

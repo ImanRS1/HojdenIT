@@ -2,13 +2,18 @@ import React from "react"
 import styled from "styled-components"
 import LandingPage from "../components/LandingPage"
 import Navbar from "../components/Navbar"
+import Cables from "../components/Cables"
 import global from "../styles/global.css"
+import switchBoardSvg from "../images/svgs/2switchboard.svg"
 
 export default function Home() {
   return (
     <MainWrapper>
       <Navbar />
+
       <LandingPage />
+      <Cables />
+
       <MainContainer>
         HöjdenIT
         <p>
