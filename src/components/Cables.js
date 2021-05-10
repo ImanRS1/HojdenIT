@@ -3,11 +3,15 @@ import styled from "styled-components"
 import switchBoardSvg from "../images/svgs/2switchboard.svg"
 import cableOne from "../images/svgs/1path.svg"
 import boardColor from "../images/svgs/3switchboardColor.svg"
+import CableOne from "./cableComponents/CableOne"
+import SwitchBoard from "./cableComponents/SwitchBoard"
 
 export default function Cables() {
   return (
     <CablesContainer>
-      <div className="cableOne">
+      <CableOne />
+      <SwitchBoard />
+      {/*  <div className="cableOne">
         <img src={cableOne} />
       </div>
       <div className="sBoard">
@@ -15,7 +19,7 @@ export default function Cables() {
       </div>
       <div className="sColor">
         <img src={boardColor} />
-      </div>
+      </div> */}
     </CablesContainer>
   )
 }
