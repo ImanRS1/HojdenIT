@@ -36,27 +36,3 @@ const CablesContainer = styled.div`
   right: 0rem;
   bottom: 1rem;
 `
-
-//{<motion.svg
-/* width = "169.70329658237426" */
-/* height = "289.9010988607914" */
-/*   viewBox="0 0 1440 600" */
-/* xmlns = "http://www.w3.org/2000/svg" */
-//>
-/*<g class="currentLayer">
-      <title>Layer 1</title>
-
-      <motion.path
-        initial={{ pathLength: 0, pathOffset: 1 }}
-        animate={{ pathLength: 1, pathOffset: 0 }}
-        transition={{ duration: 5 }}
-        d="m172.51871,2c-196.15385,54.94506 -138.8396,120.26371 -123.26595,138.15384c15.57364,17.89012 77.1121,69.53848 50.73848,108.00002c-26.37363,38.46153 -64.66378,35.09889 -84.80443,35.95603c-20.14065,0.85714 5.1341,-0.24175 -16.48351,0"
-        id="svg_10"
-        fill-rule="nonzero"
-        stroke-linejoin="round"
-        stroke-width="10"
-        stroke="#ffffff"
-        fill="none"
-      />
-    </g>
-  </motion.svg>} */

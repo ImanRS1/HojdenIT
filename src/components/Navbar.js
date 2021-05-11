@@ -65,5 +65,6 @@ const NavList = styled.div`
     justify-content: space-between;
   }
   li {
+    list-style: none;
   }
 `

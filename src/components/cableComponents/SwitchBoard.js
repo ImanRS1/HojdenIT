@@ -10,10 +10,8 @@ export default function SwitchBoard() {
       transition={{ duration: 1.2, delay: 1 }}
     >
       <svg
-        /* width="307.12088012695312"
-        height="290.83515930175781" */
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 320 200"
+        viewBox="0 0 315 200"
         preserveAspectRatio="xMidYMid meet"
       >
         <title>my vector image</title>
@@ -481,8 +479,8 @@ export default function SwitchBoard() {
 
 const SwitchBoardContainer = styled(motion.div)`
   position: absolute;
-  right: 11rem;
-  bottom: -15rem;
+  right: 11.3rem;
+  bottom: -15.2rem;
   height: auto;
   width: 50rem;
   overflow: hidden;

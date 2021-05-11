@@ -22,6 +22,7 @@ const BackGImage = styled.div`
     height: 100%;
     width: 100%;
     overflow-y: hidden;
+    object-fit: cover;
     -webkit-mask-image: -webkit-gradient(
       linear,
       left top,
@@ -39,5 +40,6 @@ const BackGImage = styled.div`
 
 const LandingPageWrapper = styled.div`
   height: 100vh;
-  width: 100vw;
+
+/*   width: 100vw; */
 `
