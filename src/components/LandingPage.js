@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import backGImage from "../images/placeholder3.jpg"
+import { motion } from "framer-motion"
 
 export default function LandingPage() {
   return (
@@ -9,10 +10,36 @@ export default function LandingPage() {
         <BackGImage>
           <img className="bPic" src={backGImage} />
         </BackGImage>
+        <LandingSlogon
+          initial={{ x: -300, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <h1>HöjdenIT - effektiv, kunnig och nära</h1>
+          <h3>Din problemlösare vid fiberinstallation och kabeldragning</h3>
+        </LandingSlogon>
       </LandingPageWrapper>
     </div>
   )
 }
+
+const LandingSlogon = styled(motion.div)`
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  z-index: 1;
+  font-family: "AllertaStencil";
+  font-size: 1.2rem;
+
+  text-transform: uppercase;
+  h1 {
+    font-weight: lighter;
+    font-size: 3rem;
+  }
+  h3 {
+    font-weight: lighter;
+  }
+`
 
 const BackGImage = styled.div`
   height: 100%;
@@ -41,5 +68,5 @@ const BackGImage = styled.div`
 const LandingPageWrapper = styled.div`
   height: 100vh;
 
-/*   width: 100vw; */
+  /*   width: 100vw; */
 `

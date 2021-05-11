@@ -15,8 +15,8 @@ export default function Cables() {
       <CableOne />
 
       <SwitchBoardContainer
-        initial={{ x: -200, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        initial={{ y: 200, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 2 }}
       >
         <SwitchBoard />
