@@ -8,6 +8,7 @@ import CableOne from "./cableComponents/CableOne"
 import SwitchBoard from "./cableComponents/SwitchBoard"
 import SwitchColor from "./cableComponents/SwitchColor"
 import SwitchGapColor from "./cableComponents/SwtichGapColor"
+import CableTwo from "./cableComponents/CableTwo"
 
 export default function Cables() {
   return (
@@ -23,6 +24,8 @@ export default function Cables() {
         <SwitchColor />
         <SwitchGapColor />
       </SwitchBoardContainer>
+
+      <CableTwo />
 
       {/*  <div className="cableOne">
         <img src={cableOne} />
@@ -40,6 +43,9 @@ export default function Cables() {
 const SwitchBoardContainer = styled(motion.div)``
 
 const CablesContainer = styled.div`
+/* height: 100vh;
+max-width: 1800px;
+background-color: teal; */
   .sBoard {
     position: absolute;
     right: 20rem;
