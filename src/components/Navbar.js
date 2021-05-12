@@ -32,8 +32,8 @@ export default function Navbar() {
   }
 
   const navListVariant = {
-    scrolled: { transform: "scale(0.2)" },
-    notScrolled: { transform: "scale(1)" },
+    scrolled: { fontSize: "1.2rem" },
+    notScrolled: { fontSize: "1.5rem" },
   }
 
   const changeBackground = () => {
@@ -58,16 +58,17 @@ export default function Navbar() {
           variants={imgVariant}
           transition={{ duration: 0.5 }}
         />
-        <NavList
-          animate={scrolled ? "scrolled" : "notScrolled"}
-          variants={navListVariant}
-          transition={{ duration: 0.5 }}
-        >
-          <ul>
+        <NavList>
+          <motion.ul
+            animate={scrolled ? "scrolled" : "notScrolled"}
+            initial={{ fontSize: "1.2rem" }}
+            variants={navListVariant}
+            transition={{ duration: 0.5 }}
+          >
             <li>OM OSS</li>
             <li>VÅRA TJÄNSTER</li>
             <li>KONTAKT</li>
-          </ul>
+          </motion.ul>
         </NavList>
       </NavbarContainer>
     </NavbarWrapper>
@@ -107,7 +108,6 @@ const NavList = styled.div`
   display: flex;
   align-items: center;
   font-family: "AllertaStencil";
-  font-size: 1.5rem;
   ul {
     width: 100%;
     display: flex;
