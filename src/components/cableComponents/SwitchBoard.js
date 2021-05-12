@@ -481,6 +481,7 @@ const SwitchBoardContainer = styled(motion.div)`
   position: absolute;
   right: 11.3rem;
   bottom: -15.2rem;
+  z-index: 1;
   height: auto;
   width: 50rem;
   overflow: hidden;
