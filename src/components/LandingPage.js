@@ -10,14 +10,16 @@ export default function LandingPage() {
         <BackGImage>
           <img className="bPic" src={backGImage} />
         </BackGImage>
-        <LandingSlogon
-          initial={{ x: -300, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <h1>HöjdenIT - effektiv, kunnig och nära</h1>
-          <h3>Din problemlösare vid fiberinstallation och kabeldragning</h3>
-        </LandingSlogon>
+        <SloganWrapper>
+          <LandingSlogon
+            initial={{ x: -300, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <h1>HöjdenIT - effektiv, kunnig och nära</h1>
+            <h3>Din problemlösare vid fiberinstallation och kabeldragning</h3>
+          </LandingSlogon>
+        </SloganWrapper>
       </LandingPageWrapper>
     </div>
   )
@@ -25,8 +27,7 @@ export default function LandingPage() {
 
 const LandingSlogon = styled(motion.div)`
   position: absolute;
-  top: 40%;
-  left: 15%;
+  top: 22rem;
   z-index: 1;
   font-family: "AllertaStencil";
   font-size: 1.2rem;
@@ -39,6 +40,11 @@ const LandingSlogon = styled(motion.div)`
   h3 {
     font-weight: lighter;
   }
+`
+
+const SloganWrapper = styled(motion.div)`
+  max-width: 1400px;
+  margin: 0 auto;
 `
 
 const BackGImage = styled.div`
