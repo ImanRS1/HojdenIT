@@ -28,7 +28,7 @@ export default function Navbar() {
 
   const navVariant = {
     scrolled: { background: "rgba(0,0,0,0.5)" },
-    notScrolled: { background: "transparent" },
+    notScrolled: { background: "rgba(0,0,0,0)" },
   }
 
   const navListVariant = {
@@ -50,6 +50,7 @@ export default function Navbar() {
     <NavbarWrapper
       animate={scrolled ? "scrolled" : "notScrolled"}
       variants={navVariant}
+      transition={{ duration: 0.5 }}
     >
       <NavbarContainer>
         <motion.img

@@ -1,11 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 import { motion } from "framer-motion"
+import CountUp from "./CountUpNumber"
 
 export default function AboutUs() {
   return (
     <AboutWrapper>
       <h1>OM OSS</h1>
+      <CountUp />
     </AboutWrapper>
   )
 }
