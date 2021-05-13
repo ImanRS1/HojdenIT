@@ -27,9 +27,7 @@ export default function CableStart() {
 
 const CablesContainer = styled.div`
   position: absolute;
-  right: -42rem;
-  bottom: -5.6rem;
-  height: 50rem;
-  width: 40rem;
+  right: -2rem;
+  bottom: 41.7rem;
   transform: scale(1.2);
 `
