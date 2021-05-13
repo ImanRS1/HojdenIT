@@ -9,12 +9,13 @@ import SwitchBoard from "./cableComponents/SwitchBoard"
 import SwitchColor from "./cableComponents/SwitchColor"
 import SwitchGapColor from "./cableComponents/SwtichGapColor"
 import CableTwo from "./cableComponents/CableTwo"
+import CableStart from "./cableComponents/CableStart"
 
 export default function Cables() {
   return (
     <CablesContainer>
-      <CableOne />
-
+      <CableStart />
+      <CableOne className="cableOne" />
       <SwitchBoardContainer
         initial={{ y: 200, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -24,18 +25,7 @@ export default function Cables() {
         <SwitchColor />
         <SwitchGapColor />
       </SwitchBoardContainer>
-
       <CableTwo />
-
-      {/*  <div className="cableOne">
-        <img src={cableOne} />
-      </div>
-      <div className="sBoard">
-        <img src={switchBoardSvg} />
-      </div>
-      <div className="sColor">
-        <img src={boardColor} />
-      </div> */}
     </CablesContainer>
   )
 }
@@ -43,10 +33,11 @@ export default function Cables() {
 const SwitchBoardContainer = styled(motion.div)``
 
 const CablesContainer = styled.div`
-/* height: 100vh;
-max-width: 1800px;
-background-color: teal; */
-  .sBoard {
+  margin: 0 auto;
+  max-width: 1800px;
+  transform: scale(0.9);
+
+  /*   .sBoard {
     position: absolute;
     right: 20rem;
     bottom: 3rem;
@@ -70,6 +61,6 @@ background-color: teal; */
     bottom: 3rem;
     img {
       width: 25rem;
-    }
-  }
+    } */
+  /*  } */
 `
