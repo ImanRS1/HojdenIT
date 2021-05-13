@@ -3,6 +3,7 @@ import styled from "styled-components"
 import LandingPage from "../components/LandingPage"
 import Navbar from "../components/Navbar"
 import Cables from "../components/Cables"
+import About from "../components/AboutUs"
 import global from "../styles/global.css"
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Cables />
 
       <MainContainer>
+      <About/>
         HöjdenIT
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe id
