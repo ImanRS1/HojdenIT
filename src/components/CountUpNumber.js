@@ -6,9 +6,10 @@ import { motion } from "framer-motion"
 export default function CountUpNumber() {
   const createCounter = () => {
     const options = {
-      duration: 6.2,
+      duration: 4.2,
+      separator: "",
     }
-    let demo = new CountUp("targetElement", 417, options)
+    let demo = new CountUp("targetElement", 1417, options)
     if (!demo.error) {
       demo.start()
     } else {
@@ -23,13 +24,37 @@ export default function CountUpNumber() {
   }
   return (
     <CountHolder>
-      <h1 id="targetElement" onLoad={startCounter()}>
-        0
-      </h1>
+      <h2>Mer än</h2>
+      <div className="numberHolder">
+        <h2 id="targetElement" onLoad={startCounter()} className="targetCount">
+          0
+        </h2>
+      </div>
+      <h2>Framgångsrikt utförda uppdrag</h2>
     </CountHolder>
   )
 }
 
 const CountHolder = styled(motion.div)`
-  margin: 1rem;
+  font-family: "AllertaStencil";
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  text-align: center;
+  border: 15px solid white;
+  border-radius: 1rem;
+  .numberHolder {
+    display: flex;
+  }
+  .targetCount {
+    font-size: 4rem;
+  }
+  h2 {
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 2rem;
+    font-weight: lighter;
+  }
 `
