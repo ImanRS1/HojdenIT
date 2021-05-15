@@ -1,15 +1,14 @@
 import { CountUp } from "countup.js"
 import React from "react"
+import styled from "styled-components"
+import { motion } from "framer-motion"
 
 export default function CountUpNumber() {
-  let testerr = 0
-
   const createCounter = () => {
-    console.log("andra")
     const options = {
       duration: 6.2,
     }
-    let demo = new CountUp("myTargetElement", 417, options)
+    let demo = new CountUp("targetElement", 417, options)
     if (!demo.error) {
       demo.start()
     } else {
@@ -17,16 +16,20 @@ export default function CountUpNumber() {
     }
   }
 
-  const createCounterr = () => {
+  const startCounter = () => {
     setTimeout(function () {
       createCounter()
     }, 500)
   }
   return (
-    <div>
-      <h1 id="myTargetElement" onLoad={createCounterr()}>
+    <CountHolder>
+      <h1 id="targetElement" onLoad={startCounter()}>
         0
       </h1>
-    </div>
+    </CountHolder>
   )
 }
+
+const CountHolder = styled(motion.div)`
+  margin: 1rem;
+`
