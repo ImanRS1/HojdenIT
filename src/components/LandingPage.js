@@ -17,7 +17,7 @@ export default function LandingPage() {
             transition={{ duration: 1 }}
           >
             <h1>HöjdenIT - effektiv, kunnig och nära</h1>
-            <h3>Din problemlösare vid fiberinstallation och kabeldragning</h3>
+            <h3>Din problemlösare vid fiberinstallation och coaxialdragning</h3>
           </LandingSlogon>
         </SloganWrapper>
       </LandingPageWrapper>

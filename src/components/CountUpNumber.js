@@ -37,11 +37,12 @@ export default function CountUpNumber() {
 
 const CountHolder = styled(motion.div)`
   font-family: "AllertaStencil";
-  margin: 5rem;
+  margin: 0 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 20rem;
+  height: 20rem;
   text-align: center;
   border: 15px solid white;
   border-radius: 1rem;

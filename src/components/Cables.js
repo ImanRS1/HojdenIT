@@ -10,6 +10,7 @@ import SwitchColor from "./cableComponents/SwitchColor"
 import SwitchGapColor from "./cableComponents/SwtichGapColor"
 import CableTwo from "./cableComponents/CableTwo"
 import CableStart from "./cableComponents/CableStart"
+import CableConnection from "./cableComponents/CableConnection"
 
 export default function Cables() {
   return (
@@ -26,6 +27,7 @@ export default function Cables() {
         <SwitchGapColor />
       </SwitchBoardContainer>
       <CableTwo />
+      <CableConnection/>
     </CablesContainer>
   )
 }

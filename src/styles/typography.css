@@ -2,3 +2,13 @@
   font-family: "AllertaStencil";
   src: url("../fonts/AllertaStencil-Regular.ttf");
 }
+
+@font-face {
+  font-family: "UbuntuLight";
+  src: url("../fonts/Ubuntu-Light.ttf");
+}
+
+@font-face {
+  font-family: "UbuntuRegular";
+  src: url("../fonts/Ubuntu-Regular.ttf");
+}
