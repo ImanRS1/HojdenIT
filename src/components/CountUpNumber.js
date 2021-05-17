@@ -20,14 +20,14 @@ export default function CountUpNumber() {
   const startCounter = () => {
     setTimeout(function () {
       createCounter()
-    }, 500)
+    }, 4200)
   }
   return (
     <CountHolder>
       <h2>Mer än</h2>
       <div className="numberHolder">
         <h2 id="targetElement" onLoad={startCounter()} className="targetCount">
-          0
+          -
         </h2>
       </div>
       <h2>Framgångsrikt utförda uppdrag</h2>
