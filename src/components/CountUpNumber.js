@@ -46,6 +46,8 @@ const CountHolder = styled(motion.div)`
   text-align: center;
   border: 15px solid white;
   border-radius: 1rem;
+  z-index: 2;
+  padding: 0.5rem;
   .numberHolder {
     display: flex;
   }

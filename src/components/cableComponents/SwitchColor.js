@@ -34,7 +34,7 @@ export default function SwitchColor() {
           <motion.path
             initial={{ pathLength: 0, pathOffset: 1 }}
             animate={{ pathLength: 1, pathOffset: 0 }}
-            transition={{ duration: 2, delay: 2.8 }}
+            transition={{ duration: 1, delay: 1.8 }}
             transform="rotate(180 101.801 47.7619)"
             fill="#dadada"
             stroke="#00bf00"

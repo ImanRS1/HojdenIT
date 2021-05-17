@@ -4,6 +4,7 @@ import LandingPage from "../components/LandingPage"
 import Navbar from "../components/Navbar"
 import Cables from "../components/Cables"
 import About from "../components/AboutUs"
+import Footer from "../components/Footer"
 import global from "../styles/global.css"
 
 export default function Home() {
@@ -15,10 +16,9 @@ export default function Home() {
       <Cables />
 
       <MainContainer>
-      <About/>
-        
-       
+        <About />
       </MainContainer>
+      <Footer />
     </MainWrapper>
   )
 }

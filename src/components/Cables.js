@@ -20,7 +20,7 @@ export default function Cables() {
       <SwitchBoardContainer
         initial={{ y: 200, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 1 }}
       >
         <SwitchBoard />
         <SwitchColor />

@@ -3,11 +3,12 @@ import styled from "styled-components"
 import { motion } from "framer-motion"
 import CountUp from "./CountUpNumber"
 import coaxImage from "../images/placeholder11.png"
+import CableThree from "../components/cableComponents/CableThree"
 
 export default function AboutUs() {
   return (
     <AboutWrapper>
-      <h1>OM OSS</h1>
+      <h1>HöjdenIT</h1>
       <AboutContainer>
         <CountUp />
         <div className="textContainer">
@@ -34,6 +35,7 @@ export default function AboutUs() {
           </p>
         </div>
       </AboutContainer>
+      <CableThree/>
     </AboutWrapper>
   )
 }
@@ -47,6 +49,7 @@ const AboutContainer = styled(motion.div)`
     line-height: 1.9rem;
     z-index: 1;
     position: relative;
+    margin-bottom: 0.5rem;
   }
 
   .textContainer{
@@ -57,8 +60,8 @@ const AboutContainer = styled(motion.div)`
 
   .coaxImage {
     position: absolute;
-    width: 20rem;
-    left:20rem;
+    width: 25rem;
+    left:0rem;
     opacity: 0.8;
     z-index: 0;
 
@@ -78,6 +81,8 @@ const AboutContainer = styled(motion.div)`
 
 const AboutWrapper = styled(motion.div)`
   margin-top: 7rem;
+  max-width: 1200px;
+  position: relative;
   h1 {
     margin-bottom: 2rem;
     text-align: center;

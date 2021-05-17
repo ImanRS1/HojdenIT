@@ -113,4 +113,5 @@ const CableContainer = styled.div`
   bottom: -35.15rem;
   height: 20rem;
   width: 20rem;
+  z-index: 2;
 `
