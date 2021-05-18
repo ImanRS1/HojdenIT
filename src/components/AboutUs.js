@@ -13,6 +13,7 @@ export default function AboutUs() {
         <CountUp />
         <div className="textContainer">
           <img src={coaxImage} className="coaxImage" />
+
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe id
             minima vel in aliquid eaque?
@@ -35,7 +36,7 @@ export default function AboutUs() {
           </p>
         </div>
       </AboutContainer>
-      <CableThree/>
+      <CableThree />
     </AboutWrapper>
   )
 }
@@ -52,16 +53,15 @@ const AboutContainer = styled(motion.div)`
     margin-bottom: 0.5rem;
   }
 
-  .textContainer{
+  .textContainer {
     height: 30rem;
     width: 50rem;
-
   }
 
   .coaxImage {
     position: absolute;
     width: 25rem;
-    left:0rem;
+    left: 0rem;
     opacity: 0.8;
     z-index: 0;
 
@@ -71,11 +71,7 @@ const AboutContainer = styled(motion.div)`
       from(rgba(0, 0, 0, 0.7)),
       to(rgba(0, 0, 0, 0))
     );
-    mask-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0)
-    );
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
   }
 `
 
