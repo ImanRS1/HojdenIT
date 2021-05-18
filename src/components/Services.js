@@ -31,8 +31,15 @@ const ServiceCointainer = styled(motion.div)`
   justify-content: center;
   align-items: center;
 
-  .listOne .listTwo {
-    list-style: none;
+  .listOne,
+  .listTwo {
+    margin: 1rem;
+    font-family: "UbuntuLight";
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    li {
+      list-style-type: none;
+    }
   }
 `
 
