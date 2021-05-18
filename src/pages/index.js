@@ -37,12 +37,6 @@ const MainWrapper = styled.div`
     right: 0;
     top: 180vh;
     width: 100vw;
-    -webkit-mask-image: -webkit-gradient(
-      linear,
-      bottom left,
-      from(rgba(0, 0, 0, 0.7)),
-      to(rgba(0, 0, 0, 0))
-    );
     mask-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0),

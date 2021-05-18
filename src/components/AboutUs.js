@@ -8,7 +8,7 @@ import CableThree from "../components/cableComponents/CableThree"
 export default function AboutUs() {
   return (
     <AboutWrapper>
-      <h1>HöjdenIT</h1>
+      <h1>HÖJDENIT</h1>
       <AboutContainer>
         <CountUp />
         <div className="textContainer">
