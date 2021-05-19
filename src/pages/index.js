@@ -31,6 +31,7 @@ export default function Home() {
 const MainWrapper = styled.div`
   background-image: linear-gradient(to bottom left, #2599f8, #282828);
   width: 100%;
+  height: 100%;
 
   .fiberImage {
     object-fit: cover;

@@ -1,25 +1,45 @@
 import React from "react"
 import styled from "styled-components"
 import { motion } from "framer-motion"
+import {
+  staggerAnimations,
+  fadeInFromLeft,
+  fadeInFromRight,
+  titleAnim,
+} from "../animations"
 
 export default function Services() {
   return (
     <ServicesWrapper>
       <h1>VÅRA TJÄNSTER</h1>
-      <ServiceCointainer>
-        <motion.ul className="listOne">
-          <motion.li>Lorem</motion.li>
-          <motion.li>Lorem</motion.li>
-          <motion.li>Lorem</motion.li>
-          <motion.li>Lorem</motion.li>
-          <motion.li>Lorem</motion.li>
+      <ServiceCointainer
+      /* initial={{ x: -300, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1 }} */
+      >
+        <motion.ul
+          className="listOne"
+          variants={staggerAnimations}
+          initial="hidden"
+          animate="show"
+        >
+          <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
+          <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
+          <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
+          <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
+          <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
         </motion.ul>
-        <motion.ul className="listTwo">
-          <motion.li>Lorem</motion.li>
-          <motion.li>Lorem</motion.li>
-          <motion.li>Lorem</motion.li>
-          <motion.li>Lorem</motion.li>
-          <motion.li>Lorem</motion.li>
+        <motion.ul
+          className="listTwo"
+          variants={staggerAnimations}
+          initial="hidden"
+          animate="show"
+        >
+          <motion.li variants={fadeInFromRight}>Lorem</motion.li>
+          <motion.li variants={fadeInFromRight}>Lorem</motion.li>
+          <motion.li variants={fadeInFromRight}>Lorem</motion.li>
+          <motion.li variants={fadeInFromRight}>Lorem</motion.li>
+          <motion.li variants={fadeInFromRight}>Lorem</motion.li>
         </motion.ul>
       </ServiceCointainer>
     </ServicesWrapper>
