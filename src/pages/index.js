@@ -33,9 +33,11 @@ const MainWrapper = styled.div`
   width: 100%;
 
   .fiberImage {
+    object-fit: cover;
+    height: 100vh;
     position: absolute;
     right: 0;
-    top: 180vh;
+    top: 160vh;
     width: 100vw;
     mask-image: linear-gradient(
       to bottom,

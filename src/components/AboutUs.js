@@ -85,5 +85,6 @@ const AboutWrapper = styled(motion.div)`
     font-family: "AllertaStencil";
     font-weight: lighter;
     font-size: 3rem;
+    letter-spacing: 0.5rem;
   }
 `

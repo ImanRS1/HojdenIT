@@ -28,24 +28,27 @@ export default function Services() {
 
 const ServiceCointainer = styled(motion.div)`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  width: 100%;
 
   .listOne,
   .listTwo {
     margin: 1rem;
     font-family: "UbuntuLight";
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1.9rem;
     li {
       list-style-type: none;
+      margin: 3rem;
     }
   }
 `
 
 const ServicesWrapper = styled(motion.div)`
-  margin-top: 10rem;
   height: 1500px;
+  max-width: 1200px;
+  margin: 7rem auto;
   h1 {
     margin-bottom: 2rem;
     text-align: center;
