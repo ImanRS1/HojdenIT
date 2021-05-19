@@ -7,8 +7,6 @@ export const staggerAnimations = {
     }
 };
 
-
-
 export const fadeInFromRight = {
     hidden: {
         x: 150,

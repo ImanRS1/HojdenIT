@@ -5,7 +5,6 @@ import {
   staggerAnimations,
   fadeInFromLeft,
   fadeInFromRight,
-  titleAnim,
 } from "../animations"
 import fiberImage from "../images/placeholder2.jpg"
 

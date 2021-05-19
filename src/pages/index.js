@@ -7,7 +7,6 @@ import About from "../components/AboutUs"
 import Footer from "../components/Footer"
 import Services from "../components/Services"
 import global from "../styles/global.css"
-import fiberImage from "../images/placeholder2.jpg"
 
 export default function Home() {
   return (
@@ -20,7 +19,6 @@ export default function Home() {
       <MainContainer>
         <About />
       </MainContainer>
-      {/*  <img src={fiberImage} className="fiberImage" /> */}
       <Services />
 
       <Footer />
@@ -31,23 +29,6 @@ export default function Home() {
 const MainWrapper = styled.div`
   background-image: linear-gradient(to bottom left, #2599f8, #282828);
   width: 100%;
-
-  /*   .fiberImage {
-    object-fit: cover;
-    height: 100vh;
-    position: absolute;
-    right: 0;
-    top: 160vh;
-    width: 100vw;
-    mask-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.01),
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.01),
-      rgba(0, 0, 0, 0)
-    );
-  } */
 `
 
 const MainContainer = styled.div`
