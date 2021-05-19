@@ -7,20 +7,20 @@ export default function Services() {
     <ServicesWrapper>
       <h1>VÅRA TJÄNSTER</h1>
       <ServiceCointainer>
-        <ul className="listOne">
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
-        </ul>
-        <ul className="listTwo">
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
-          <li>Lorem</li>
-        </ul>
+        <motion.ul className="listOne">
+          <motion.li>Lorem</motion.li>
+          <motion.li>Lorem</motion.li>
+          <motion.li>Lorem</motion.li>
+          <motion.li>Lorem</motion.li>
+          <motion.li>Lorem</motion.li>
+        </motion.ul>
+        <motion.ul className="listTwo">
+          <motion.li>Lorem</motion.li>
+          <motion.li>Lorem</motion.li>
+          <motion.li>Lorem</motion.li>
+          <motion.li>Lorem</motion.li>
+          <motion.li>Lorem</motion.li>
+        </motion.ul>
       </ServiceCointainer>
     </ServicesWrapper>
   )
