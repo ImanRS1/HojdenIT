@@ -20,7 +20,7 @@ export default function Home() {
       <MainContainer>
         <About />
       </MainContainer>
-      <img src={fiberImage} className="fiberImage" />
+      {/*  <img src={fiberImage} className="fiberImage" /> */}
       <Services />
 
       <Footer />
@@ -31,9 +31,8 @@ export default function Home() {
 const MainWrapper = styled.div`
   background-image: linear-gradient(to bottom left, #2599f8, #282828);
   width: 100%;
-  height: 100%;
 
-  .fiberImage {
+  /*   .fiberImage {
     object-fit: cover;
     height: 100vh;
     position: absolute;
@@ -48,7 +47,7 @@ const MainWrapper = styled.div`
       rgba(0, 0, 0, 0.01),
       rgba(0, 0, 0, 0)
     );
-  }
+  } */
 `
 
 const MainContainer = styled.div`

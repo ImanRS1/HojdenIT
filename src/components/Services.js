@@ -7,42 +7,44 @@ import {
   fadeInFromRight,
   titleAnim,
 } from "../animations"
+import fiberImage from "../images/placeholder2.jpg"
 
 export default function Services() {
   return (
-    <ServicesWrapper>
-      <h1>VÅRA TJÄNSTER</h1>
-      <ServiceCointainer
-      /* initial={{ x: -300, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1 }} */
-      >
-        <motion.ul
-          className="listOne"
-          variants={staggerAnimations}
-          initial="hidden"
-          animate="show"
-        >
-          <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
-          <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
-          <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
-          <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
-          <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
-        </motion.ul>
-        <motion.ul
-          className="listTwo"
-          variants={staggerAnimations}
-          initial="hidden"
-          animate="show"
-        >
-          <motion.li variants={fadeInFromRight}>Lorem</motion.li>
-          <motion.li variants={fadeInFromRight}>Lorem</motion.li>
-          <motion.li variants={fadeInFromRight}>Lorem</motion.li>
-          <motion.li variants={fadeInFromRight}>Lorem</motion.li>
-          <motion.li variants={fadeInFromRight}>Lorem</motion.li>
-        </motion.ul>
-      </ServiceCointainer>
-    </ServicesWrapper>
+    <ServiceMainContainer>
+      <ServicesWrapper>
+        <h1>VÅRA TJÄNSTER</h1>
+        <ServiceCointainer>
+          <motion.ul
+            className="listOne"
+            variants={staggerAnimations}
+            initial="hidden"
+            animate="show"
+          >
+            <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
+            <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
+            <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
+            <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
+            <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
+          </motion.ul>
+          <motion.ul
+            className="listTwo"
+            variants={staggerAnimations}
+            initial="hidden"
+            animate="show"
+          >
+            <motion.li variants={fadeInFromRight}>Lorem</motion.li>
+            <motion.li variants={fadeInFromRight}>Lorem</motion.li>
+            <motion.li variants={fadeInFromRight}>Lorem</motion.li>
+            <motion.li variants={fadeInFromRight}>Lorem</motion.li>
+            <motion.li variants={fadeInFromRight}>Lorem</motion.li>
+          </motion.ul>
+        </ServiceCointainer>
+      </ServicesWrapper>
+      <FiberImageContainer>
+        <img src={fiberImage} className="fiberImage" />
+      </FiberImageContainer>
+    </ServiceMainContainer>
   )
 }
 
@@ -65,8 +67,26 @@ const ServiceCointainer = styled(motion.div)`
   }
 `
 
+const FiberImageContainer = styled(motion.div)`
+  img {
+    object-fit: cover;
+    width: 100vw;
+    min-height: 50rem;
+    max-height: 60rem;
+    height: 70%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0)
+    );
+  }
+`
+
 const ServicesWrapper = styled(motion.div)`
-  height: 1500px;
   max-width: 1200px;
   margin: 7rem auto;
   h1 {
@@ -76,4 +96,10 @@ const ServicesWrapper = styled(motion.div)`
     font-weight: lighter;
     font-size: 3rem;
   }
+`
+
+const ServiceMainContainer = styled(motion.div)`
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 `
