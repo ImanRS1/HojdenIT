@@ -14,6 +14,7 @@ export default function Contact() {
 const ContactWrapper = styled(motion.div)`
   max-width: 1200px;
   margin: 0 auto;
+  min-height: 30rem;
 
   h1 {
     margin-bottom: 2rem;
