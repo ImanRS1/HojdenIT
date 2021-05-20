@@ -6,20 +6,20 @@ import Cables from "../components/Cables"
 import About from "../components/AboutUs"
 import Footer from "../components/Footer"
 import Services from "../components/Services"
+import Contact from "../components/Contact"
 import global from "../styles/global.css"
 
 export default function Home() {
   return (
     <MainWrapper>
       <Navbar />
-
       <LandingPage />
       <Cables />
-
       <MainContainer>
         <About />
       </MainContainer>
       <Services />
+      <Contact />
 
       <Footer />
     </MainWrapper>

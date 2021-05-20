@@ -22,10 +22,7 @@ export default function Services() {
           >
             <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
             <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
-            <motion.li variants={fadeInFromLeft}>
-              Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem, provident.
-            </motion.li>
+            <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
             <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
             <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
           </motion.ul>
@@ -74,9 +71,9 @@ const FiberImageContainer = styled(motion.div)`
   img {
     object-fit: cover;
     width: 100vw;
-    min-height: 50rem;
+    min-height: 40rem;
     max-height: 60rem;
-    height: 70%;
+    height: 20%;
     position: absolute;
     right: 0;
     top: 0;
@@ -104,6 +101,6 @@ const ServicesWrapper = styled(motion.div)`
 
 const ServiceMainContainer = styled(motion.div)`
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
 `
