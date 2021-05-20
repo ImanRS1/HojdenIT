@@ -22,7 +22,10 @@ export default function Services() {
           >
             <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
             <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
-            <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
+            <motion.li variants={fadeInFromLeft}>
+              Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem, provident.
+            </motion.li>
             <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
             <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
           </motion.ul>
@@ -55,6 +58,7 @@ const ServiceCointainer = styled(motion.div)`
 
   .listOne,
   .listTwo {
+    z-index: 3;
     margin: 1rem;
     font-family: "UbuntuLight";
     font-size: 2rem;
@@ -76,6 +80,7 @@ const FiberImageContainer = styled(motion.div)`
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 0;
     mask-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0),
