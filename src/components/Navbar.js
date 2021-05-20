@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import cLogo from "../images/HöjdenITLogo-white.png"
+import companyLogo from "../images/HöjdenLogo.svg"
 import "../styles/typography.css"
 import { motion, useViewportScroll } from "framer-motion"
 
@@ -22,13 +23,18 @@ export default function Navbar() {
   /*  } */
 
   const imgVariant = {
-    scrolled: { height: "6rem" },
-    notScrolled: { height: "10rem" },
+    scrolled: { height: "7rem" },
+    notScrolled: { height: "12rem" },
   }
 
   const navVariant = {
     scrolled: { background: "rgba(0,0,0,0.5)" },
     notScrolled: { background: "rgba(0,0,0,0)" },
+  }
+
+  const companyName = {
+    scrolled: { fontSize: "1.8rem" },
+    notScrolled: { fontSize: "3rem" },
   }
 
   const navListVariant = {
@@ -53,12 +59,22 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
     >
       <NavbarContainer>
-        <motion.img
-          src={cLogo}
-          animate={scrolled ? "scrolled" : "notScrolled"}
-          variants={imgVariant}
-          transition={{ duration: 0.5 }}
-        />
+        <div className="logoContainer">
+          <motion.img
+            src={companyLogo}
+            animate={scrolled ? "scrolled" : "notScrolled"}
+            variants={imgVariant}
+            transition={{ duration: 0.5 }}
+          />
+          <motion.p
+            animate={scrolled ? "scrolled" : "notScrolled"}
+            variants={companyName}
+            transition={{ duration: 0.5 }}
+          >
+            HöjdenIT
+          </motion.p>
+        </div>
+
         <NavList>
           <motion.ul
             animate={scrolled ? "scrolled" : "notScrolled"}
@@ -95,11 +111,14 @@ const NavbarContainer = styled(motion.div)`
     height: 10rem;
   }
 
-  .navScrolled {
-    background-color: teal;
-    font-size: 10rem;
-    img {
-      height: 10rem;
+  .logoContainer {
+    position: relative;
+    p {
+      font-family: "AllertaStencil";
+      position: absolute;
+      top: 28%;
+      left: 80%;
+      font-size: 1.7rem;
     }
   }
 `
