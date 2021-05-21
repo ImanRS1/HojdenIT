@@ -46,5 +46,4 @@ const FooterWrapper = styled(motion.div)`
   width: 100vw;
   background-color: #1b1b1b;
   height: 6rem;
-  margin-top: 10rem;
 `

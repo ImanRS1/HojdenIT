@@ -20,7 +20,6 @@ export default function Home() {
       </MainContainer>
       <Services />
       <Contact />
-
       <Footer />
     </MainWrapper>
   )
@@ -35,6 +34,7 @@ const MainContainer = styled.div`
   max-width: 1200px;
   color: white;
   margin: 0 auto;
-  min-height: 600px;
+  height: 100%;
+  /* min-height: 600px; */
   position: relative;
 `
