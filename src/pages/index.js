@@ -8,6 +8,7 @@ import Footer from "../components/Footer"
 import Services from "../components/Services"
 import Contact from "../components/Contact"
 import global from "../styles/global.css"
+import { useScroll } from "../components/useScroll"
 
 export default function Home() {
   return (
