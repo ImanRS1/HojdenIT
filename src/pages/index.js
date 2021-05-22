@@ -11,6 +11,7 @@ import global from "../styles/global.css"
 import { useScroll } from "../components/useScroll"
 
 export default function Home() {
+  const [element, controls] = useScroll()
   return (
     <MainWrapper>
       <Navbar />
@@ -26,16 +27,15 @@ export default function Home() {
   )
 }
 
-const MainWrapper = styled.div`
+const MainWrapper = styled(motion.div)`
   background-image: linear-gradient(to bottom left, #2599f8, #282828);
   width: 100%;
 `
 
-const MainContainer = styled.div`
+const MainContainer = styled(motion.div)`
   max-width: 1200px;
   color: white;
   margin: 0 auto;
   height: 100%;
-  /* min-height: 600px; */
   position: relative;
 `

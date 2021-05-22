@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import CountUp from "./CountUpNumber"
 import coaxImage from "../images/placeholder11.png"
 import CableThree from "../components/cableComponents/CableThree"
+import {scrollReveal} from "../animations"
 
 export default function AboutUs() {
   return (
