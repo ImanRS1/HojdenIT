@@ -5,8 +5,11 @@ import CountUp from "./CountUpNumber"
 import coaxImage from "../images/placeholder11.png"
 import CableThree from "../components/cableComponents/CableThree"
 import {scrollReveal} from "../animations"
+import {useScroll} from "../components/useScroll"
 
 export default function AboutUs() {
+
+  const [element, controls] = useScroll();
   return (
     <AboutWrapper>
       <h1>HÖJDENIT</h1>
