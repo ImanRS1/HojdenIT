@@ -21,10 +21,10 @@ export default function Contact() {
               </li>
               <li>
                 <span className="boldDetail">Öppettider:</span> Mon-Lör 08:00 -
-                18:00{" "}
+                18:00
               </li>
               <li>
-                <span className="boldDetail">E-mail:</span> hojdenIT@outlook.com{" "}
+                <span className="boldDetail">E-mail:</span> hojdenIT@outlook.com
               </li>
             </ul>
           </div>
@@ -85,7 +85,7 @@ const ContactWrapper = styled(motion.div)`
     margin-bottom: 0.5rem;
   }
 
-  .drillImage {
+  /*   .drillImage {
     width: 15rem;
     height: auto;
     mask-image: linear-gradient(
@@ -94,7 +94,7 @@ const ContactWrapper = styled(motion.div)`
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     );
-  }
+  } */
 
   .contactDetails {
     width: 100%;
@@ -140,5 +140,5 @@ const ContactWrapper = styled(motion.div)`
 const ContactContainer = styled(motion.div)`
   position: relative;
   width: 100vw;
-  min-height: 50rem;
+  min-height: 45rem;
 `
