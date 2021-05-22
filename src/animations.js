@@ -2,7 +2,7 @@ export const staggerAnimations = {
     hidden: {},
     show: {
         transition: {
-            staggerChildren: 0.4,
+            staggerChildren: 0.6,
         }
     }
 };

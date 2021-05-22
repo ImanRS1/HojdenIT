@@ -118,7 +118,6 @@ const NavbarContainer = styled(motion.div)`
       position: absolute;
       top: 28%;
       left: 80%;
-      font-size: 1.7rem;
     }
   }
 `
