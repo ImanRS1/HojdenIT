@@ -11,5 +11,5 @@ export const useScroll = () => {
     controls.start("hidden")
   }
 
-  return [element, controls]
+  return [element, controls, view]
 }

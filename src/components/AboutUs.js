@@ -9,7 +9,7 @@ import {useScroll} from "../components/useScroll"
 
 export default function AboutUs() {
 
-  const [element, controls] = useScroll();
+  const [element, controls, view] = useScroll();
   return (
     <AboutWrapper variants={scrollReveal} ref={element} animate={controls}>
       <h1>HÖJDENIT</h1>
@@ -40,7 +40,7 @@ export default function AboutUs() {
           </p>
         </div>
       </AboutContainer>
-      <CableThree />
+      <CableThree render={view}/>
     </AboutWrapper>
   )
 }

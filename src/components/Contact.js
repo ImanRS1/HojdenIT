@@ -3,11 +3,14 @@ import styled from "styled-components"
 import { motion } from "framer-motion"
 import companyLogo from "../images/HöjdenLogo.svg"
 import cardImage from "../images/placeholder7.jpg"
+import { scrollReveal } from "../animations"
+import { useScroll } from "../components/useScroll"
 
 export default function Contact() {
+  const [element, controls] = useScroll()
   return (
     <ContactContainer>
-      <ContactWrapper>
+      <ContactWrapper variants={scrollReveal} ref={element} animate={controls}>
         <h1>KONTAKT</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et
