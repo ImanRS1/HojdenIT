@@ -2,23 +2,33 @@ import React from "react"
 import styled from "styled-components"
 import { motion } from "framer-motion"
 import {
-  staggerAnimations,
+  staggerAnimations1,
+  staggerAnimations2,
   fadeInFromLeft,
   fadeInFromRight,
 } from "../animations"
 import fiberImage from "../images/placeholder2.jpg"
+import { scrollReveal } from "../animations"
+import { useScroll } from "../components/useScroll"
 
 export default function Services() {
+  const [element, controls] = useScroll()
+
   return (
     <ServiceMainContainer>
-      <ServicesWrapper>
+      <ServicesWrapper
+        variants={scrollReveal}
+        ref={element}
+        animate={controls}
+        initial="hidden"
+      >
         <h1>VÅRA TJÄNSTER</h1>
         <ServiceCointainer>
           <motion.ul
             className="listOne"
-            variants={staggerAnimations}
+            variants={staggerAnimations1}
             initial="hidden"
-            animate="show"
+            animate={controls}
           >
             <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
             <motion.li variants={fadeInFromLeft}>Lorem</motion.li>
@@ -28,9 +38,9 @@ export default function Services() {
           </motion.ul>
           <motion.ul
             className="listTwo"
-            variants={staggerAnimations}
+            variants={staggerAnimations2}
             initial="hidden"
-            animate="show"
+            animate={controls}
           >
             <motion.li variants={fadeInFromRight}>Lorem</motion.li>
             <motion.li variants={fadeInFromRight}>Lorem</motion.li>

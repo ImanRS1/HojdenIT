@@ -16,7 +16,7 @@ export const scrollReveal = {
     },
   };
 
-export const staggerAnimations = {
+export const staggerAnimations1 = {
     hidden: {},
     show: {
         transition: {
@@ -24,6 +24,15 @@ export const staggerAnimations = {
         }
     }
 };
+
+export const staggerAnimations2 = {
+    hidden: {},
+    show: {
+        transition: {
+          staggerChildren: 0.5,
+        }
+    }
+}
 
 export const fadeInFromRight = {
     hidden: {
