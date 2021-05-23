@@ -11,7 +11,7 @@ export default function AboutUs() {
 
   const [element, controls] = useScroll();
   return (
-    <AboutWrapper>
+    <AboutWrapper variants={scrollReveal} ref={element} animate={controls}>
       <h1>HÖJDENIT</h1>
       <AboutContainer>
         <CountUp />
