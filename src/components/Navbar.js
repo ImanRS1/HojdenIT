@@ -28,7 +28,7 @@ export default function Navbar() {
   }
 
   const navVariant = {
-    scrolled: { background: "rgba(0,0,0,0.5)" },
+    scrolled: { background: "rgba(27,27,27,0.8)" },
     notScrolled: { background: "rgba(0,0,0,0)" },
   }
 
