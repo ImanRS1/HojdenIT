@@ -14,7 +14,7 @@ export default function AboutUs() {
     <AboutWrapper variants={scrollReveal} ref={element} animate={controls}>
       <h1>HÖJDENIT</h1>
       <AboutContainer>
-        <CountUp />
+        <CountUp render={view}/>
         <div className="textContainer">
           <img src={coaxImage} className="coaxImage" />
 

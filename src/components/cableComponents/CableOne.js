@@ -15,7 +15,7 @@ export default function CableOne() {
           <motion.path
             initial={{ pathLength: 0, pathOffset: 1 }}
             animate={{ pathLength: 1, pathOffset: 0 }}
-            transition={{ duration: 1, delay: 1 }}
+            transition={{ duration: 0.8, delay: 1 }}
             id="svg_6"
             d="m452.67544,522c184.27154,0 184.27154,0 184.16667,0c0.10487,0 0.74242,-398.07198 0,-400.16669c-0.74242,-2.09472 164.51432,-0.65153 173.68099,-1.01518"
             opacity="NaN"

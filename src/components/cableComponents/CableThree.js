@@ -11,7 +11,7 @@ export default function CableThree(view) {
           <motion.path
             initial={{ pathLength: 0, pathOffset: 1 }}
             animate={view.render ? ({ pathLength: 1, pathOffset: 0 }) : ""}
-            transition={{ duration: 0.5, delay: 3.7 }}
+            transition={{ duration: 0.3, delay: 1.0 }}
             id="svg_2"
             d="m156.5,123.5c-138.09055,0 -111.71989,-0.71989 -140,-1c-5.28011,-2.28011 -3,-9 -3,-80"
             opacity="NaN"

@@ -3,10 +3,10 @@ import React from "react"
 import styled from "styled-components"
 import { motion } from "framer-motion"
 
-export default function CountUpNumber() {
+export default function CountUpNumber(view) {
   const createCounter = () => {
     const options = {
-      duration: 4.2,
+      duration: 3.2,
       separator: "",
     }
     let demo = new CountUp("targetElement", 1417, options)
@@ -18,9 +18,12 @@ export default function CountUpNumber() {
   }
 
   const startCounter = () => {
-    setTimeout(function () {
-      createCounter()
-    }, 4200)
+    if(view.render){
+      setTimeout(function () {
+        createCounter()
+      }, 1400)
+    }
+   
   }
   return (
     <CountHolder>

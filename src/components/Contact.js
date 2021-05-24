@@ -68,7 +68,6 @@ const CardImageContainer = styled(motion.div)`
 const ContactWrapper = styled(motion.div)`
   max-width: 1200px;
   margin: 0 auto;
-
   position: relative;
 
   h1 {
