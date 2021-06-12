@@ -1,9 +1,26 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import backGImage from "../images/placeholder3.jpg"
 import { motion } from "framer-motion"
 
 export default function LandingPage() {
+  const [stickySlogan, setStickySlogan] = useState(true)
+  let initWindowHeight = window.innerHeight
+  let breakPont = initWindowHeight * 0.4
+  console.log(breakPont)
+  /* console.log(window.innerHeight - window.scrollY) */
+
+  window.onscroll = function () {
+    console.log(stickySlogan)
+    if (initWindowHeight - window.scrollY < breakPont) {
+      console.log("NUUUUUUUUUUUU")
+      setStickySlogan(false)
+    }
+    console.log(window.innerHeight - window.scrollY)
+    /* console.log(initWindowHeight)
+    console.log(window.scrollY) */
+  }
+
   return (
     <div>
       <LandingPageWrapper>
@@ -15,6 +32,9 @@ export default function LandingPage() {
             initial={{ x: -300, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
+            style={
+              stickySlogan ? { position: "fixed" } : { position: "relative" }
+            }
           >
             <h1>HöjdenIT - effektiv, kunnig och nära</h1>
             <h3>Din problemlösare vid fiberinstallation och coaxialdragning</h3>
@@ -26,8 +46,8 @@ export default function LandingPage() {
 }
 
 const LandingSlogon = styled(motion.div)`
-  position: absolute;
-  top: 25rem;
+  /* position: fixed; */
+
   z-index: 1;
   font-family: "AllertaStencil";
   font-size: 1.2rem;
@@ -43,13 +63,17 @@ const LandingSlogon = styled(motion.div)`
 `
 
 const SloganWrapper = styled(motion.div)`
-  max-width: 1400px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  height: 100vh;
 `
 
 const BackGImage = styled.div`
   height: 100%;
   width: 100%;
+  position: absolute;
   overflow-y: hidden;
   .bPic {
     height: 100%;

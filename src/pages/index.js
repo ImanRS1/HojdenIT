@@ -15,7 +15,7 @@ export default function Home() {
     <MainWrapper>
       <Navbar />
       <LandingPage />
-      <Cables />
+      {/* <Cables /> */}
       <MainContainer>
         <About />
       </MainContainer>
