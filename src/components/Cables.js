@@ -13,10 +13,15 @@ import CableStart from "./cableComponents/CableStart"
 import CableConnection from "./cableComponents/CableConnection"
 
 export default function Cables() {
+  const checkWindowWidth = () => {
+    let currentWidth = window.innerWidth
+    return currentWidth
+  }
+
   return (
     <CablesContainer>
       <CableStart />
-      <CableOne className="cableOne" />
+      <CableOne cW={checkWindowWidth()} className="cableOne" />
       <SwitchBoardContainer
         initial={{ y: 200, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -27,7 +32,7 @@ export default function Cables() {
         <SwitchGapColor />
       </SwitchBoardContainer>
       <CableTwo />
-      <CableConnection/>
+      <CableConnection />
     </CablesContainer>
   )
 }
@@ -38,31 +43,4 @@ const CablesContainer = styled.div`
   margin: 0 auto;
   max-width: 1800px;
   transform: scale(0.9);
-
-  /*   .sBoard {
-    position: absolute;
-    right: 20rem;
-    bottom: 3rem;
-    img {
-      width: 25rem;
-    }
-  }
-
-  .cableOne {
-    position: absolute;
-    right: 0;
-    top: 8.7rem;
-    img {
-      width: 24.8rem;
-    }
-  }
-
-  .sColor {
-    position: absolute;
-    right: 20rem;
-    bottom: 3rem;
-    img {
-      width: 25rem;
-    } */
-  /*  } */
 `
