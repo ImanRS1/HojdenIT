@@ -6,19 +6,16 @@ import { motion } from "framer-motion"
 export default function LandingPage() {
   const [stickySlogan, setStickySlogan] = useState(true)
   let initWindowHeight = window.innerHeight
-  let breakPont = initWindowHeight * 0.4
+  let breakPont = initWindowHeight * 0.5
   console.log(breakPont)
-  /* console.log(window.innerHeight - window.scrollY) */
 
   window.onscroll = function () {
     console.log(stickySlogan)
     if (initWindowHeight - window.scrollY < breakPont) {
-      console.log("NUUUUUUUUUUUU")
       setStickySlogan(false)
+    } else {
+      setStickySlogan(true)
     }
-    console.log(window.innerHeight - window.scrollY)
-    /* console.log(initWindowHeight)
-    console.log(window.scrollY) */
   }
 
   return (
@@ -33,7 +30,9 @@ export default function LandingPage() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1 }}
             style={
-              stickySlogan ? { position: "fixed" } : { position: "relative" }
+              stickySlogan
+                ? { position: "fixed" }
+                : { position: "absolute", top: "95vh" }
             }
           >
             <h1>HöjdenIT - effektiv, kunnig och nära</h1>
@@ -47,7 +46,7 @@ export default function LandingPage() {
 
 const LandingSlogon = styled(motion.div)`
   /* position: fixed; */
-
+  /*   top: 90vh; */
   z-index: 1;
   font-family: "AllertaStencil";
   font-size: 1.2rem;
