@@ -12,22 +12,31 @@ import { motion } from "framer-motion"
 
 export default function Home() {
   return (
-    <MainWrapper>
-      <Navbar />
-      <LandingPage />
-      {/* <Cables /> */}
-      <MainContainer>
-        <About />
-      </MainContainer>
+    <Wrapper>
+      <MainWrapper>
+        <Navbar />
+        <LandingPage />
+        {/* <Cables /> */}
+        <MainContainer>
+          <About />
+        </MainContainer>
+      </MainWrapper>
       <Services />
-      <Contact />
-      <Footer />
-    </MainWrapper>
+      <MainWrapper>
+        <Contact />
+        <Footer />
+      </MainWrapper>
+    </Wrapper>
   )
 }
 
+const Wrapper = styled(motion.div)`
+  overflow-x: hidden;
+`
+
 const MainWrapper = styled(motion.div)`
   background-image: linear-gradient(to bottom left, #2599f8, #282828);
+  z-index: -2;
   width: 100%;
 `
 

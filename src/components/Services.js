@@ -50,9 +50,12 @@ export default function Services() {
           </motion.ul>
         </ServiceCointainer>
       </ServicesWrapper>
-      <FiberImageContainer>
+      <FiberImageContainerNew>
         <img src={fiberImage} className="fiberImage" />
-      </FiberImageContainer>
+      </FiberImageContainerNew>
+      {/*  <FiberImageContainer>
+        <img src={fiberImage} className="fiberImage" />
+      </FiberImageContainer> */}
     </ServiceMainContainer>
   )
 }
@@ -74,6 +77,32 @@ const ServiceCointainer = styled(motion.div)`
       list-style-type: none;
       margin: 3rem;
     }
+  }
+`
+
+const FiberImageContainerNew = styled(motion.div)`
+  background-image: linear-gradient(to bottom left, #2599f8, #282828);
+  img {
+    object-fit: cover;
+    width: 100vw;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1),
+      rgba(221, 21, 21, 0.5)
+    );
+
+    /* mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0)
+    ); */
   }
 `
 
