@@ -81,21 +81,26 @@ const ServiceCointainer = styled(motion.div)`
 `
 
 const FiberImageContainerNew = styled(motion.div)`
-  background-image: linear-gradient(to bottom left, #2599f8, #282828);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  background-image: linear-gradient(to bottom left, #217bc5, #282828);
   img {
     object-fit: cover;
     width: 100vw;
     position: fixed;
     right: 0;
     top: 0;
-    z-index: -1;
-
-    mask-image: linear-gradient(
+    opacity: 0.3;
+    /*   mask-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 1),
-      rgba(221, 21, 21, 0.5)
-    );
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    ); */
 
     /* mask-image: linear-gradient(
       to bottom,
