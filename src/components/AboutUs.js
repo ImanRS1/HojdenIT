@@ -84,6 +84,7 @@ const AboutWrapper = styled(motion.div)`
   max-width: 1200px;
   position: relative;
   z-index: 3;
+  padding-bottom: 2rem;
   h1 {
     margin-bottom: 2rem;
     text-align: center;

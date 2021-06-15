@@ -72,6 +72,7 @@ const ContactWrapper = styled(motion.div)`
 
   h1 {
     margin-bottom: 2rem;
+    padding-top: 1rem;
     text-align: center;
     font-family: "AllertaStencil";
     font-weight: lighter;

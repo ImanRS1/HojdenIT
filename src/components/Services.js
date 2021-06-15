@@ -81,7 +81,7 @@ const ServiceCointainer = styled(motion.div)`
 `
 
 const FiberImageContainerNew = styled(motion.div)`
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   position: fixed;
   right: 0;
@@ -133,7 +133,7 @@ const FiberImageContainer = styled(motion.div)`
 
 const ServicesWrapper = styled(motion.div)`
   max-width: 1200px;
-  margin: 7rem auto;
+  margin: 1rem auto;
   h1 {
     margin-bottom: 2rem;
     text-align: center;
