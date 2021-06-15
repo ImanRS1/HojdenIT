@@ -13,19 +13,19 @@ import { motion } from "framer-motion"
 export default function Home() {
   return (
     <Wrapper>
-      <MainWrapper>
+      <MainWrapper1>
         <Navbar />
         <LandingPage />
         {/* <Cables /> */}
         <MainContainer>
           <About />
         </MainContainer>
-      </MainWrapper>
+      </MainWrapper1>
       <Services />
-      <MainWrapper>
+      <MainWrapper2>
         <Contact />
         <Footer />
-      </MainWrapper>
+      </MainWrapper2>
     </Wrapper>
   )
 }
@@ -34,8 +34,14 @@ const Wrapper = styled(motion.div)`
   overflow-x: hidden;
 `
 
-const MainWrapper = styled(motion.div)`
+const MainWrapper1 = styled(motion.div)`
   background-image: linear-gradient(to bottom left, #2599f8, #282828);
+  z-index: -2;
+  width: 100%;
+`
+
+const MainWrapper2 = styled(motion.div)`
+  background-image: linear-gradient(to bottom left, #1c6aaa, #282828);
   z-index: -2;
   width: 100%;
 `
