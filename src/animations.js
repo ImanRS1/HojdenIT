@@ -42,7 +42,7 @@ export const fadeInFromRight = {
     show: {
         x: 0,
         opacity: 1,
-        transition: { duration: 0.35, ease: "easeOut" },
+        transition: { duration: 0.55, ease: "easeOut" },
     }
 };
 
@@ -54,6 +54,6 @@ export const fadeInFromLeft = {
     show: {
         x: 0,
         opacity: 1,
-        transition: {duration: 0.35, ease: "easeOut"}
+        transition: {duration: 0.55, ease: "easeOut"}
     }
 };
