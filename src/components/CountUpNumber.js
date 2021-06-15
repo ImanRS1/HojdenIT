@@ -21,7 +21,7 @@ export default function CountUpNumber(view) {
     if(view.render){
       setTimeout(function () {
         createCounter()
-      }, 1400)
+      }, 500)
     }
    
   }
