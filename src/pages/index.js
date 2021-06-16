@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import LandingPage from "../components/LandingPage"
+import LoadingPage from "../components/LoadingPage"
 import Navbar from "../components/Navbar"
 import Cables from "../components/Cables"
 import About from "../components/AboutUs"
@@ -13,6 +14,7 @@ import { motion } from "framer-motion"
 export default function Home() {
   return (
     <Wrapper>
+      <LoadingPage />
       <MainWrapper1>
         <Navbar />
         <LandingPage />
@@ -31,7 +33,7 @@ export default function Home() {
 }
 
 const Wrapper = styled(motion.div)`
-  overflow-x: hidden;
+  /*  overflow-x: hidden; */
 `
 
 const MainWrapper1 = styled(motion.div)`
