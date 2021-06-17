@@ -1,3 +1,17 @@
+export const fadeOut = {
+  hidden:{
+    opacity: 1,
+  },
+  show: {
+    opacity: 0,
+    transition:{
+      duration: 0.5,
+      delay: 1.2,
+    },
+  }
+};
+
+
 export const scrollReveal = {
     hidden: {
       opacity: 0,

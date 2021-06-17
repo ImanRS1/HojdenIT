@@ -3,7 +3,6 @@ import styled from "styled-components"
 import { motion } from "framer-motion"
 import companyLogo from "../images/HöjdenLogo.svg"
 import "../styles/typography.css"
-import loadingCircle from "../images/circleSVG.svg"
 import LoadingCircle from "./LoadingCircle"
 
 export default function LoadingPage() {
@@ -12,7 +11,6 @@ export default function LoadingPage() {
       <LogoAndNameContainer>
         <img src={companyLogo} />
         <p>Höjden IT</p>
-        {/*  <img src={loadingCircle} className="lCircle" /> */}
         <LoadingCircle />
       </LogoAndNameContainer>
     </Wrapper>
