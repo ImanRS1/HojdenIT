@@ -3,20 +3,22 @@ import styled from "styled-components"
 import { motion } from "framer-motion"
 import companyLogo from "../images/HöjdenLogo.svg"
 import "../styles/typography.css"
+import loadingCircle from "../images/circleSVG.svg"
 
 export default function LoadingPage() {
   return (
     <Wrapper>
       <LogoAndNameContainer>
         <img src={companyLogo} />
-
         <p>Höjden IT</p>
+        <img src={loadingCircle} className="lCircle" />
       </LogoAndNameContainer>
     </Wrapper>
   )
 }
 
 const LogoAndNameContainer = styled(motion.div)`
+  /*   transform: scale(0.5); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +29,10 @@ const LogoAndNameContainer = styled(motion.div)`
   letter-spacing: 0.1rem;
   p {
     z-index: 3;
+  }
+
+  .lCircle {
+    height: 50rem;
   }
   img {
     height: 21rem;
