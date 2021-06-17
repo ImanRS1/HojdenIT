@@ -33,7 +33,7 @@ export default function Home() {
 }
 
 const Wrapper = styled(motion.div)`
-  /*  overflow-x: hidden; */
+  overflow-x: hidden;
 `
 
 const MainWrapper1 = styled(motion.div)`
