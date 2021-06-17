@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import companyLogo from "../images/HöjdenLogo.svg"
 import "../styles/typography.css"
 import loadingCircle from "../images/circleSVG.svg"
+import LoadingCircle from "./LoadingCircle"
 
 export default function LoadingPage() {
   return (
@@ -11,21 +12,24 @@ export default function LoadingPage() {
       <LogoAndNameContainer>
         <img src={companyLogo} />
         <p>Höjden IT</p>
-        <img src={loadingCircle} className="lCircle" />
+        {/*  <img src={loadingCircle} className="lCircle" /> */}
+        <LoadingCircle />
       </LogoAndNameContainer>
     </Wrapper>
   )
 }
 
 const LogoAndNameContainer = styled(motion.div)`
-  /*   transform: scale(0.5); */
+  transform: scale(0.7);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 20rem;
   width: 30rem;
   font-family: "AllertaStencil";
-  font-size: 3rem;
+  font-size: 4rem;
+  text-shadow: 2px 2px #0c0101;
+  text-align: center;
   letter-spacing: 0.1rem;
   p {
     z-index: 3;
@@ -35,6 +39,7 @@ const LogoAndNameContainer = styled(motion.div)`
     height: 50rem;
   }
   img {
+    margin-left: 1rem;
     height: 21rem;
     position: absolute;
   }

@@ -5,17 +5,20 @@ import { motion } from "framer-motion"
 export default function LoadingCircle() {
   return (
     <CircleHolder>
-      <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        stroke-width="12"
+        width="800"
+        height="600"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <g>
           <title>Layer 1</title>
-          <ellipse
-            stroke-width="12"
-            ry="164"
-            rx="164"
-            id="svg_1"
-            cy="296"
-            cx="416"
-            stroke="#000"
+          <motion.path
+            initial={{ pathLength: 0, pathOffset: 1 }}
+            animate={{ pathLength: 1, pathOffset: 0 }}
+            transition={{ duration: 1 }}
+            d="m682.5,329.5c-1,-115 -92,-227 -233.5,-223.5c-141.5,3.5 -229.5,115.5 -229,233c0.5,117.5 86.5,223.5 230,224c143.5,0.5 233.5,-118.5 232.5,-233.5z"
+            stroke="#fefefe"
             fill="none"
           />
         </g>
@@ -26,5 +29,10 @@ export default function LoadingCircle() {
 
 const CircleHolder = styled(motion.div)`
   position: absolute;
-  width: 50rem;
+  transform: scale(0.9);
+  margin-left: 6rem;
+  margin-bottom: 4rem;
+  svg {
+    transform: rotate(90deg);
+  }
 `
