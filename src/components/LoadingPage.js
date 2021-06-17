@@ -4,10 +4,11 @@ import { motion } from "framer-motion"
 import companyLogo from "../images/HöjdenLogo.svg"
 import "../styles/typography.css"
 import LoadingCircle from "./LoadingCircle"
+import { fadeOut } from "../animations"
 
 export default function LoadingPage() {
   return (
-    <Wrapper>
+    <Wrapper inital="hidden" animate="show" variants={fadeOut}>
       <LogoAndNameContainer>
         <img src={companyLogo} />
         <p>Höjden IT</p>
