@@ -56,4 +56,5 @@ const Wrapper = styled(motion.div)`
   top: 0;
   left: 0;
   background-image: linear-gradient(to bottom left, #2599f8, #282828);
+  user-select: none;
 `

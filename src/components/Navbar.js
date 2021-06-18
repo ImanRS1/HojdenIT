@@ -4,6 +4,7 @@ import cLogo from "../images/HöjdenITLogo-white.png"
 import companyLogo from "../images/HöjdenLogo.svg"
 import "../styles/typography.css"
 import { motion, useViewportScroll } from "framer-motion"
+import { fadeIn } from "../animations"
 
 export default function Navbar() {
   /* let scrolled = true */
@@ -53,6 +54,9 @@ export default function Navbar() {
   window.addEventListener("scroll", changeBackground)
 
   return (
+    <FadeWrapper animate="show" initial="hidden" variants={fadeIn}>
+
+   
     <NavbarWrapper
       animate={scrolled ? "scrolled" : "notScrolled"}
       variants={navVariant}
@@ -89,11 +93,16 @@ export default function Navbar() {
         </NavList>
       </NavbarContainer>
     </NavbarWrapper>
+    </FadeWrapper>
   )
 }
 
+const FadeWrapper = styled(motion.div)`
+  
+`
+
 const NavbarWrapper = styled(motion.div)`
-  z-index: 99;
+  z-index: 299;
   top: 0;
   left: 0;
   width: 100%;
