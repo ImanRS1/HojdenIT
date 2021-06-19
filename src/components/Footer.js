@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <FooterWrapper>
       <FooterContainer>
-        <p className="copyrightText"> &copy; HöjdenIT 2021</p>
+        <p className="copyrightText"> &copy; HöjdénIT 2021</p>
         <p className="developerText">
           Developed by <img src={developerImage} />
         </p>

@@ -61,7 +61,7 @@ export default function Navbar() {
             variants={companyName}
             transition={{ duration: 0.5 }}
           >
-            HöjdenIT
+            HöjdénIT
           </motion.p>
         </div>
 

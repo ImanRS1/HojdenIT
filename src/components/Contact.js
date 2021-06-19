@@ -13,27 +13,26 @@ export default function Contact() {
       <ContactWrapper variants={scrollReveal} ref={element} animate={controls}>
         <h1>KONTAKT</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et
-          ex corporis sequi sed nam quas eius saepe exercitationem provident?
+          För information och offertförfrågningar kring våra tjänster är ni varmt välkomna att kontakta oss via mail eller telefon.
         </p>
         <div className="contactDetails">
           <div className="detailsText">
             <ul>
               <li>
-                <span className="boldDetail">Telefonnummer:</span> 073 154 89 62
+                <span className="boldDetail">Telefonnummer:</span> 073 896 70 78
               </li>
               <li>
                 <span className="boldDetail">Öppettider:</span> Mon-Lör 08:00 -
                 18:00
               </li>
               <li>
-                <span className="boldDetail">E-mail:</span> hojdenIT@outlook.com
+                <span className="boldDetail">E-mail:</span> HojdenIT@outlook.com
               </li>
             </ul>
           </div>
           <div className="detailsLogo">
             <img src={companyLogo} />
-            <p>HöjdenIT</p>
+            <p>HöjdénIT</p>
           </div>
         </div>
       </ContactWrapper>
@@ -109,7 +108,7 @@ const ContactWrapper = styled(motion.div)`
 
   .detailsText {
     li {
-      margin-left: 2rem;
+      /* margin-left: 2rem; */
       list-style: none;
       font-family: "UbuntuLight";
       font-size: 1.5rem;

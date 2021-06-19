@@ -12,31 +12,36 @@ export default function AboutUs() {
   const [element, controls, view] = useScroll();
   return (
     <AboutWrapper variants={scrollReveal} ref={element} animate={controls}>
-      <h1>HÖJDENIT</h1>
+      <h1>HÖJDÉNIT</h1>
       <AboutContainer>
         <CountUp render={view}/>
         <div className="textContainer">
           <img src={coaxImage} className="coaxImage" />
 
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe id
-            minima vel in aliquid eaque?
+            Med passion för service och installation leverarar HöjdénIT helhetslösningar inom fiber och coax till våra kunder inom Stockholm och Mälardalsområdet.
+            
+            
+            {/* över 10 års erfarenhet inom installation och service av fiber samt coaxiallösningar är HöjdenIT  */}
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+            I takt med högre krav på internetkapacitet och nyteknik ser vi våra kunders behov av en tillförlitlig och sakkunnig entrepenör.           
+            <p>
+            Därför tar vi på HöjdénIT kontinuerliga steg för att bibehålla vår ledande kompetens och kunskap om de senaste lösningarna inom området.
+            </p>
+            
+          </p>
+          <p>
+            Som en aktör med över 10 års erfarenhet inom branchen har vi skapat WAN och LAN lösningar med kapacitet som passar allt från privatpersoner till bostadsrättsföreningar och företag.
+          </p>
+          <p>
+            
+          {/*   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
             deserunt fugiat, quam harum quas, explicabo quaerat assumenda
             cupiditate cumque delectus non animi, natus maiores iure sint magni
             suscipit aperiam consequuntur aut. Eos fugiat error molestiae nulla,
             esse ipsa modi mollitia cupiditate culpa, nemo omnis porro eum
-            aliquid ut provident animi.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
-            deserunt fugiat, quam harum quas, explicabo quaerat assumenda
-            cupiditate cumque delectus non animi, natus maiores iure sint magni
-            suscipit aperiam consequuntur aut. Eos fugiat error molestiae nulla,
-            esse ipsa modi mollitia cupiditate culpa, nemo omnis porro eum
-            aliquid ut provident animi.
+            aliquid ut provident animi. */}
           </p>
         </div>
       </AboutContainer>

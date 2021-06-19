@@ -35,8 +35,9 @@ export default function LandingPage() {
                 : { position: "absolute", top: "95vh" }
             }
           >
-            <h1>HöjdenIT - effektiv, kunnig och nära</h1>
-            <h3>Din problemlösare vid fiberinstallation och coaxialdragning</h3>
+            <h1>HöjdénIT - effektiv, kunnig, nära</h1>
+            {/* <h3>Din problemlösare vid fiberinstallation och coaxialdragning</h3> */}
+            <h3>Din helhetslösning vid fiber och coaxiala installationer.</h3>
           </LandingSlogon>
         </SloganWrapper>
       </LandingPageWrapper>
