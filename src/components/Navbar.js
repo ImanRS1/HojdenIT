@@ -7,21 +7,7 @@ import { motion, useViewportScroll } from "framer-motion"
 import { fadeIn } from "../animations"
 
 export default function Navbar() {
-  /* let scrolled = true */
-  /* const { scrollY } = useViewportScroll() */
   const [scrolled, setScrolled] = useState(false)
-
-  /* const checkScroll = () => {
-    scrollY.onChange(y => {
-      /* console.log(y)
-      console.log(scrolled) */
-  /*  if (y > 23) {
-        return false
-      } else {
-        return true
-      }
-    }) */
-  /*  } */
 
   const imgVariant = {
     scrolled: { height: "7rem" },
