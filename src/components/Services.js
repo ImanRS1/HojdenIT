@@ -10,6 +10,9 @@ import {
 import fiberImage from "../images/placeholder2.jpg"
 import { scrollReveal } from "../animations"
 import { useScroll } from "../components/useScroll"
+import socketImage from "../images/socket2.jpg"
+import oneExpert from "../images/oneexpert.png"
+import coaxImage from "../images/coaximage.png"
 
 export default function Services() {
   const [element, controls] = useScroll()
@@ -25,16 +28,46 @@ export default function Services() {
         <h1>VÅRA TJÄNSTER</h1>
         <ServiceCointainer>
           <div>
-            <ServiceObject></ServiceObject>
+            <ServiceObject>
+              <img src={socketImage} />
+
+              <div className="textContainer">
+                <h2>Header</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
+                  repellendus?
+                </p>
+              </div>
+            </ServiceObject>
             <ServiceObject></ServiceObject>
           </div>
 
           <div>
-            <ServiceObject></ServiceObject>
+            <ServiceObject>
+              <img src={oneExpert} />
+
+              <div className="textContainer">
+                <h2>Header</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
+                  repellendus?
+                </p>
+              </div>
+            </ServiceObject>
             <ServiceObject></ServiceObject>
           </div>
           <div>
-            <ServiceObject></ServiceObject>
+            <ServiceObject>
+              <img src={coaxImage} />
+
+              <div className="textContainer">
+                <h2>Header</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
+                  repellendus?
+                </p>
+              </div>
+            </ServiceObject>
             <ServiceObject></ServiceObject>
           </div>
 
@@ -76,11 +109,43 @@ export default function Services() {
 
 const ServiceObject = styled(motion.div)`
   height: 35rem;
-  margin: 4rem 0rem;
-  width: 25rem;
-  border: 1rem solid #2c598f;
+  margin: 4rem 1rem;
+  width: 20rem;
+  border: 0.5rem solid #2c598f;
   border-radius: 1rem;
   background-color: rgba(40, 40, 40, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    /* border-radius: 50%; */
+  }
+
+  .textContainer {
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    font-family: "UbuntuLight";
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+
+    h2 {
+      margin: 0.5rem;
+    }
+  }
 `
 
 const ServiceCointainer = styled(motion.div)`
