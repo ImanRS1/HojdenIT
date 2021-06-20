@@ -24,7 +24,21 @@ export default function Services() {
       >
         <h1>VÅRA TJÄNSTER</h1>
         <ServiceCointainer>
-          <motion.ul
+          <div>
+            <ServiceObject></ServiceObject>
+            <ServiceObject></ServiceObject>
+          </div>
+
+          <div>
+            <ServiceObject></ServiceObject>
+            <ServiceObject></ServiceObject>
+          </div>
+          <div>
+            <ServiceObject></ServiceObject>
+            <ServiceObject></ServiceObject>
+          </div>
+
+          {/*  <motion.ul
             className="listOne"
             variants={staggerAnimations1}
             initial="hidden"
@@ -47,7 +61,7 @@ export default function Services() {
             <motion.li variants={fadeInFromRight}>Lorem</motion.li>
             <motion.li variants={fadeInFromRight}>Lorem</motion.li>
             <motion.li variants={fadeInFromRight}>Lorem</motion.li>
-          </motion.ul>
+          </motion.ul> */}
         </ServiceCointainer>
       </ServicesWrapper>
       <FiberImageContainerNew>
@@ -60,11 +74,21 @@ export default function Services() {
   )
 }
 
+const ServiceObject = styled(motion.div)`
+  height: 35rem;
+  margin: 4rem 0rem;
+  width: 25rem;
+  border: 1rem solid #2c598f;
+  border-radius: 1rem;
+  background-color: rgba(40, 40, 40, 0.8);
+`
+
 const ServiceCointainer = styled(motion.div)`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  flex-wrap: wrap;
 
   .listOne,
   .listTwo {
