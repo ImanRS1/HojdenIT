@@ -5,6 +5,7 @@ import companyLogo from "../images/HöjdenLogo.svg"
 import "../styles/typography.css"
 import { motion, useViewportScroll } from "framer-motion"
 import { fadeIn } from "../animations"
+import { Link, animateScroll as scroll } from "react-scroll"
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -39,53 +40,87 @@ export default function Navbar() {
 
   window.addEventListener("scroll", changeBackground)
 
+  const scrollToTop = () => {
+    scroll.scrollToTop()
+  }
+
   return (
     <FadeWrapper animate="show" initial="hidden" variants={fadeIn}>
+      <NavbarWrapper
+        animate={scrolled ? "scrolled" : "notScrolled"}
+        variants={navVariant}
+        transition={{ duration: 0.5 }}
+      >
+        <NavbarContainer>
+          <div className="logoContainer" onClick={scrollToTop}>
+            <motion.img
+              src={companyLogo}
+              animate={scrolled ? "scrolled" : "notScrolled"}
+              variants={imgVariant}
+              transition={{ duration: 0.5 }}
+            />
+            <motion.p
+              animate={scrolled ? "scrolled" : "notScrolled"}
+              variants={companyName}
+              transition={{ duration: 0.5 }}
+            >
+              HöjdénIT
+            </motion.p>
+          </div>
 
-   
-    <NavbarWrapper
-      animate={scrolled ? "scrolled" : "notScrolled"}
-      variants={navVariant}
-      transition={{ duration: 0.5 }}
-    >
-      <NavbarContainer>
-        <div className="logoContainer">
-          <motion.img
-            src={companyLogo}
-            animate={scrolled ? "scrolled" : "notScrolled"}
-            variants={imgVariant}
-            transition={{ duration: 0.5 }}
-          />
-          <motion.p
-            animate={scrolled ? "scrolled" : "notScrolled"}
-            variants={companyName}
-            transition={{ duration: 0.5 }}
-          >
-            HöjdénIT
-          </motion.p>
-        </div>
+          <NavList>
+            <motion.ul
+              animate={scrolled ? "scrolled" : "notScrolled"}
+              initial={{ fontSize: "1.2rem" }}
+              variants={navListVariant}
+              transition={{ duration: 0.5 }}
+            >
+              <li>
+                <Link
+                  activeClass="active"
+                  to="section1"
+                  spy={true}
+                  smooth={true}
+                  offset={-280}
+                  duration={500}
+                >
+                  OM OSS
+                </Link>
+              </li>
 
-        <NavList>
-          <motion.ul
-            animate={scrolled ? "scrolled" : "notScrolled"}
-            initial={{ fontSize: "1.2rem" }}
-            variants={navListVariant}
-            transition={{ duration: 0.5 }}
-          >
-            <li>OM OSS</li>
-            <li>VÅRA TJÄNSTER</li>
-            <li>KONTAKT</li>
-          </motion.ul>
-        </NavList>
-      </NavbarContainer>
-    </NavbarWrapper>
+              <li>
+                <Link
+                  activeClass="active"
+                  to="section2"
+                  spy={true}
+                  smooth={true}
+                  offset={-120}
+                  duration={500}
+                >
+                  VÅRA TJÄNSTER
+                </Link>
+              </li>
+              <li>
+                <Link
+                  activeClass="active"
+                  to="section3"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  KONTAKT
+                </Link>
+              </li>
+            </motion.ul>
+          </NavList>
+        </NavbarContainer>
+      </NavbarWrapper>
     </FadeWrapper>
   )
 }
 
-const FadeWrapper = styled(motion.div)`
-  
-`
+const FadeWrapper = styled(motion.div)``
 
 const NavbarWrapper = styled(motion.div)`
   z-index: 299;
@@ -114,6 +149,10 @@ const NavbarContainer = styled(motion.div)`
       top: 28%;
       left: 80%;
     }
+  }
+
+  .logoContainer:hover {
+    cursor: pointer;
   }
 `
 

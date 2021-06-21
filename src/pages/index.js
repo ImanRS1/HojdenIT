@@ -19,12 +19,15 @@ export default function Home() {
         <Navbar />
         <LandingPage />
         {/* <Cables /> */}
-        <MainContainer>
+        <MainContainer id="section1">
           <About />
         </MainContainer>
       </MainWrapper1>
-      <Services />
-      <MainWrapper2>
+      <div id="section2">
+        <Services />
+      </div>
+
+      <MainWrapper2 id="section3">
         <Contact />
         <Footer />
       </MainWrapper2>
