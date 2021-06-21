@@ -2,7 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import { motion } from "framer-motion"
 import CountUp from "./CountUpNumber"
-import coaxImage from "../images/placeholder11.png"
+import coaxImage2 from "../images/placeholder11.png"
+import coaxImage from "../images/coaxCable.png"
 import CableThree from "../components/cableComponents/CableThree"
 import {scrollReveal} from "../animations"
 import {useScroll} from "../components/useScroll"
@@ -69,7 +70,7 @@ const AboutContainer = styled(motion.div)`
 
   .coaxImage {
     position: absolute;
-    width: 25rem;
+    width: 27rem;
     left: 0rem;
     opacity: 0.8;
     z-index: 0;
@@ -80,7 +81,7 @@ const AboutContainer = styled(motion.div)`
       from(rgba(0, 0, 0, 0.7)),
       to(rgba(0, 0, 0, 0))
     );
-    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1),  rgba(0, 0, 0, 0));
   }
 `
 

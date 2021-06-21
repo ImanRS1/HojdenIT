@@ -13,6 +13,7 @@ import { useScroll } from "../components/useScroll"
 import socketImage from "../images/socket2.jpg"
 import oneExpert from "../images/oneexpert.png"
 import coaxImage from "../images/coaximage.png"
+import fiberCables from "../images/fiberCables.jpg"
 
 export default function Services() {
   const [element, controls] = useScroll()
@@ -39,7 +40,17 @@ export default function Services() {
                 </p>
               </div>
             </ServiceObject>
-            <ServiceObject></ServiceObject>
+            <ServiceObject>
+              <img src={fiberCables} />
+
+              <div className="textContainer">
+                <h2>Header</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
+                  repellendus?
+                </p>
+              </div>
+            </ServiceObject>
           </div>
 
           <div>
@@ -71,7 +82,7 @@ export default function Services() {
             <ServiceObject></ServiceObject>
           </div>
 
-          {/*  <motion.ul
+          {/* <motion.ul
             className="listOne"
             variants={staggerAnimations1}
             initial="hidden"
