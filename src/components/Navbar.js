@@ -84,7 +84,7 @@ export default function Navbar() {
                   offset={-280}
                   duration={500}
                 >
-                  OM OSS
+                  <li>OM OSS</li>
                 </Link>
               </li>
 
@@ -97,7 +97,7 @@ export default function Navbar() {
                   offset={-120}
                   duration={500}
                 >
-                  VÅRA TJÄNSTER
+                  <li>VÅRA TJÄNSTER</li>
                 </Link>
               </li>
               <li>
@@ -109,7 +109,7 @@ export default function Navbar() {
                   offset={-70}
                   duration={500}
                 >
-                  KONTAKT
+                  <li>KONTAKT</li>
                 </Link>
               </li>
             </motion.ul>
