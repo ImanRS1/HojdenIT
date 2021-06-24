@@ -65,7 +65,17 @@ export default function Services() {
                 </p>
               </div>
             </ServiceObject>
-            <ServiceObject></ServiceObject>
+            <ServiceObject>
+              <img src={coaxImage} />
+
+              <div className="textContainer">
+                <h2>Header</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
+                  repellendus?
+                </p>
+              </div>
+            </ServiceObject>
           </div>
           <div>
             <ServiceObject>
@@ -79,7 +89,17 @@ export default function Services() {
                 </p>
               </div>
             </ServiceObject>
-            <ServiceObject></ServiceObject>
+            <ServiceObject>
+              <img src={coaxImage} />
+
+              <div className="textContainer">
+                <h2>Header</h2>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
+                  repellendus?
+                </p>
+              </div>
+            </ServiceObject>
           </div>
 
           {/* <motion.ul
