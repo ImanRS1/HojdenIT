@@ -129,6 +129,7 @@ const ServiceObject = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.55) -15px 15px 15px;
 
   img {
     width: 100%;
