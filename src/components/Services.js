@@ -151,6 +151,19 @@ const ServiceObject = styled(motion.div)`
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.55) -15px 15px 15px;
 
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+
+  &:hover {
+    background-color: rgba(40, 40, 40);
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
   img {
     width: 100%;
     height: 60%;
