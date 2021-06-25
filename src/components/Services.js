@@ -162,6 +162,7 @@ const ServiceObject = styled(motion.div)`
     background-color: rgba(40, 40, 40);
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
+    box-shadow: rgba(0, 0, 0, 0.75) -15px 15px 15px;
   }
 
   img {
