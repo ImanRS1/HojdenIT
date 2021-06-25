@@ -32,6 +32,7 @@ const LogoAndNameContainer = styled(motion.div)`
   letter-spacing: 0.1rem;
   p {
     z-index: 3;
+    margin-left: 2rem;
   }
 
   .lCircle {
