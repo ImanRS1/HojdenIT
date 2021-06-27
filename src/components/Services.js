@@ -217,7 +217,7 @@ const ServiceCointainer = styled(motion.div)`
 
 const FiberImageContainerNew = styled(motion.div)`
   height: 100%;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   right: 0;
   top: 0;
@@ -226,6 +226,7 @@ const FiberImageContainerNew = styled(motion.div)`
   img {
     object-fit: cover;
     width: 100vw;
+    height: 100vh;
     position: fixed;
     right: 0;
     top: 0;
