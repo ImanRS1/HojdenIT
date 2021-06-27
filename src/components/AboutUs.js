@@ -23,7 +23,6 @@ export default function AboutUs() {
             Med passion för service och installation leverarar HöjdénIT helhetslösningar inom fiber och coax till våra kunder inom Stockholm och Mälardalsområdet.
             
             
-            {/* över 10 års erfarenhet inom installation och service av fiber samt coaxiallösningar är HöjdenIT  */}
           </p>
           <p>
             I takt med högre krav på internetkapacitet och nyteknik ser vi våra kunders behov av en tillförlitlig och sakkunnig entrepenör.           
@@ -36,13 +35,6 @@ export default function AboutUs() {
             Som en aktör med över 10 års erfarenhet inom branchen har vi skapat WAN och LAN lösningar med kapacitet som passar allt från privatpersoner till bostadsrättsföreningar och företag.
           </p>
           <p>
-            
-          {/*   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
-            deserunt fugiat, quam harum quas, explicabo quaerat assumenda
-            cupiditate cumque delectus non animi, natus maiores iure sint magni
-            suscipit aperiam consequuntur aut. Eos fugiat error molestiae nulla,
-            esse ipsa modi mollitia cupiditate culpa, nemo omnis porro eum
-            aliquid ut provident animi. */}
           </p>
         </div>
       </AboutContainer>
@@ -61,6 +53,7 @@ const AboutContainer = styled(motion.div)`
     z-index: 1;
     position: relative;
     margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   .textContainer {

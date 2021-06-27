@@ -84,7 +84,7 @@ export default function Navbar() {
                   offset={-280}
                   duration={500}
                 >
-                  <li>OM OSS</li>
+                  <p>OM OSS</p>
                 </Link>
               </li>
 
@@ -97,7 +97,7 @@ export default function Navbar() {
                   offset={-120}
                   duration={500}
                 >
-                  <li>VÅRA TJÄNSTER</li>
+                  <p>VÅRA TJÄNSTER</p>
                 </Link>
               </li>
               <li>
@@ -109,7 +109,7 @@ export default function Navbar() {
                   offset={-70}
                   duration={500}
                 >
-                  <li>KONTAKT</li>
+                  <p className="lastNavItem">KONTAKT</p>
                 </Link>
               </li>
             </motion.ul>
@@ -169,7 +169,12 @@ const NavList = styled.div`
   li {
     list-style: none;
   }
-  li:hover {
+
+  .lastNavItem {
+    margin-right: 1rem;
+  }
+
+  p:hover {
     cursor: pointer;
     color: #4aa0e9;
   }

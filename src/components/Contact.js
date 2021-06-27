@@ -87,16 +87,7 @@ const ContactWrapper = styled(motion.div)`
     margin-bottom: 0.5rem;
   }
 
-  /*   .drillImage {
-    width: 15rem;
-    height: auto;
-    mask-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    );
-  } */
+  
 
   .contactDetails {
     width: 100%;
@@ -138,6 +129,13 @@ const ContactWrapper = styled(motion.div)`
       font-size: 3.5rem;
     }
   }
+
+
+@media all and (max-width: 1245px){
+  padding: 1rem;
+
+}
+
 `
 const ContactContainer = styled(motion.div)`
   position: relative;
