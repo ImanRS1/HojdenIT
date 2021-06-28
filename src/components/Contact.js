@@ -99,7 +99,6 @@ const ContactWrapper = styled(motion.div)`
 
   .detailsText {
     li {
-      /* margin-left: 2rem; */
       list-style: none;
       font-family: "UbuntuLight";
       font-size: 1.5rem;
