@@ -45,8 +45,6 @@ export default function LandingPage() {
 }
 
 const LandingSlogon = styled(motion.div)`
-  /* position: fixed; */
-  /*   top: 90vh; */
   z-index: 3;
   font-family: "AllertaStencil";
   font-size: 1.2rem;
