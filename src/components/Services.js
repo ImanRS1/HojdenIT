@@ -192,6 +192,13 @@ const ServiceObject = styled(motion.div)`
       margin: 0.5rem;
     }
   }
+
+  @media all and (max-width: 1150px) {
+    /* flex-direction: row; */
+
+    height: 20rem;
+    width: 35rem;
+  }
 `
 
 const ServiceCointainer = styled(motion.div)`
@@ -212,6 +219,10 @@ const ServiceCointainer = styled(motion.div)`
       list-style-type: none;
       margin: 3rem;
     }
+  }
+
+  @media all and (max-width: 1150px) {
+    flex-direction: column;
   }
 `
 
