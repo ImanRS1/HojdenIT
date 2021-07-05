@@ -28,79 +28,74 @@ export default function Services() {
       >
         <h1>VÅRA TJÄNSTER</h1>
         <ServiceCointainer>
-          <div>
-            <ServiceObject>
-              <img src={socketImage} />
+          <ServiceObject>
+            <img src={socketImage} />
 
-              <div className="textContainer">
-                <h2>Header</h2>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
-                  repellendus?
-                </p>
-              </div>
-            </ServiceObject>
-            <ServiceObject>
-              <img src={fiberCables} />
+            <div className="textContainer">
+              <h2>Header</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
+                repellendus?
+              </p>
+            </div>
+          </ServiceObject>
+          <ServiceObject>
+            <img src={fiberCables} />
 
-              <div className="textContainer">
-                <h2>Header</h2>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
-                  repellendus?
-                </p>
-              </div>
-            </ServiceObject>
-          </div>
+            <div className="textContainer">
+              <h2>Header</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
+                repellendus?
+              </p>
+            </div>
+          </ServiceObject>
 
-          <div>
-            <ServiceObject>
-              <img src={oneExpert} />
+          <ServiceObject>
+            <img src={oneExpert} />
 
-              <div className="textContainer">
-                <h2>Header</h2>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
-                  repellendus?
-                </p>
-              </div>
-            </ServiceObject>
-            <ServiceObject>
-              <img src={coaxImage} />
+            <div className="textContainer">
+              <h2>Header</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
+                repellendus?
+              </p>
+            </div>
+          </ServiceObject>
+          <ServiceObject>
+            <img src={coaxImage} />
 
-              <div className="textContainer">
-                <h2>Header</h2>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
-                  repellendus?
-                </p>
-              </div>
-            </ServiceObject>
-          </div>
-          <div>
-            <ServiceObject>
-              <img src={coaxImage} />
+            <div className="textContainer">
+              <h2>Header</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
+                repellendus?
+              </p>
+            </div>
+          </ServiceObject>
 
-              <div className="textContainer">
-                <h2>Header</h2>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
-                  repellendus?
-                </p>
-              </div>
-            </ServiceObject>
-            <ServiceObject>
-              <img src={coaxImage} />
+          <ServiceObject>
+            <img src={coaxImage} />
 
-              <div className="textContainer">
-                <h2>Header</h2>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
-                  repellendus?
-                </p>
-              </div>
-            </ServiceObject>
-          </div>
+            <div className="textContainer">
+              <h2>Header</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
+                repellendus?
+              </p>
+            </div>
+          </ServiceObject>
+          <ServiceObject>
+            <img src={coaxImage} />
+
+            <div className="textContainer">
+              <h2>Header</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
+                repellendus?
+              </p>
+            </div>
+          </ServiceObject>
 
           {/* <motion.ul
             className="listOne"
@@ -195,7 +190,7 @@ const ServiceObject = styled(motion.div)`
 
   @media all and (max-width: 1150px) {
     /* flex-direction: row; */
-
+    margin: 1rem;
     height: 20rem;
     width: 35rem;
   }
