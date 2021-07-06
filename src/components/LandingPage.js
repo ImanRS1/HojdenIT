@@ -58,7 +58,7 @@ const LandingSlogon = styled(motion.div)`
     font-weight: lighter;
   }
 
-  @media all and (max-width: 970px){
+  @media all and (max-width: 1000px){
     margin: 1rem;
     h1{
       font-size: 2rem;
