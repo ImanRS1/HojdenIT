@@ -57,6 +57,18 @@ const LandingSlogon = styled(motion.div)`
   h3 {
     font-weight: lighter;
   }
+
+  @media all and (max-width: 970px){
+    margin: 1rem;
+    h1{
+      font-size: 2rem;
+
+    }
+
+    h3{
+      font-size: 1rem;
+    }
+  }
 `
 
 const SloganWrapper = styled(motion.div)`
