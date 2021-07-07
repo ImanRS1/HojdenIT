@@ -59,6 +59,13 @@ const AboutContainer = styled(motion.div)`
   .textContainer {
     height: 30rem;
     width: 50rem;
+
+    @media all and (max-width: 1000px){
+      p{
+        font-size: 1.2rem;
+      }
+      
+    }
   }
 
   .coaxImage {
