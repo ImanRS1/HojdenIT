@@ -106,7 +106,7 @@ export default function Navbar() {
                   to="section3"
                   spy={true}
                   smooth={true}
-                  offset={-70}
+                  offset={-100}
                   duration={500}
                 >
                   <p className="lastNavItem">KONTAKT</p>

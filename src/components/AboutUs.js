@@ -45,7 +45,6 @@ export default function AboutUs() {
 
 const AboutContainer = styled(motion.div)`
   display: flex;
-
   p {
     font-family: "UbuntuLight";
     font-size: 1.5rem;
