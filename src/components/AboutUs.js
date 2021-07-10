@@ -38,7 +38,6 @@ export default function AboutUs() {
           </p>
         </div>
       </AboutContainer>
-      {/* <CableThree render={view}/> */}
     </AboutWrapper>
   )
 }
