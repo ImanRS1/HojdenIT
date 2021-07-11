@@ -2,6 +2,7 @@ import { CountUp } from "countup.js"
 import React from "react"
 import styled from "styled-components"
 import { motion } from "framer-motion"
+import coaxImage from "../images/coaxCable.png"
 
 export default function CountUpNumber(view) {
   const createCounter = () => {
@@ -27,6 +28,7 @@ export default function CountUpNumber(view) {
   }
   return (
     <CountHolder>
+      <img src={coaxImage} className="coaxImage" />
       <h2>Mer än</h2>
       <div className="numberHolder">
         <h2 id="targetElement" onLoad={startCounter()} className="targetCount">
