@@ -72,27 +72,6 @@ const AboutContainer = styled(motion.div)`
       }
     }
   }
-
-  .coaxImage {
-    position: absolute;
-    width: 27rem;
-    left: 40%;
-    opacity: 0.8;
-    z-index: 0;
-
-    -webkit-mask-image: -webkit-gradient(
-      linear,
-      right top,
-      from(rgba(0, 0, 0, 0.7)),
-      to(rgba(0, 0, 0, 0))
-    );
-    mask-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0)
-    );
-  }
 `
 
 const AboutWrapper = styled(motion.div)`

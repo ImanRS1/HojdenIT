@@ -19,16 +19,18 @@ export default function CountUpNumber(view) {
   }
 
   const startCounter = () => {
-    if(view.render){
+    if (view.render) {
       setTimeout(function () {
         createCounter()
       }, 500)
     }
-   
   }
   return (
     <CountHolder>
-      <img src={coaxImage} className="coaxImage" />
+      <div className="coaxImageContainer">
+        <img src={coaxImage} className="coaxImage" />
+      </div>
+
       <h2>Mer än</h2>
       <div className="numberHolder">
         <h2 id="targetElement" onLoad={startCounter()} className="targetCount">
@@ -64,5 +66,32 @@ const CountHolder = styled(motion.div)`
     padding-left: 0.5rem;
     font-size: 2rem;
     font-weight: lighter;
+  }
+
+  .coaxImageContainer {
+    position: relative;
+    height: 1%;
+    width: 100%;
+    z-index: 0;
+  }
+  .coaxImage {
+    position: absolute;
+    width: 27rem;
+    left: -20%;
+    opacity: 0.8;
+    z-index: 0;
+
+    -webkit-mask-image: -webkit-gradient(
+      linear,
+      right top,
+      from(rgba(0, 0, 0, 0.7)),
+      to(rgba(0, 0, 0, 0))
+    );
+    mask-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0)
+    );
   }
 `
