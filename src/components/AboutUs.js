@@ -71,6 +71,12 @@ const AboutContainer = styled(motion.div)`
         font-size: 1.2rem;
       }
     }
+
+    @media all and (max-width: 850px) {
+      height: auto;
+      width: auto;
+      margin: 1rem;
+    }
   }
 `
 
