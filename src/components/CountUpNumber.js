@@ -30,14 +30,23 @@ export default function CountUpNumber(view) {
       <div className="coaxImageContainer">
         <img src={coaxImage} className="coaxImage" />
       </div>
-
-      <h2>Mer än</h2>
-      <div className="numberHolder">
-        <h2 id="targetElement" onLoad={startCounter()} className="targetCount">
-          -
-        </h2>
+      <div className="countContent">
+        <div className="leftContent">
+          <h2>Mer än</h2>
+          <div className="numberHolder">
+            <h2
+              id="targetElement"
+              onLoad={startCounter()}
+              className="targetCount"
+            >
+              -
+            </h2>
+          </div>
+        </div>
+        <div className="rightContent">
+          <h2>Framgångsrikt utförda uppdrag</h2>
+        </div>
       </div>
-      <h2>Framgångsrikt utförda uppdrag</h2>
     </CountHolder>
   )
 }
@@ -55,6 +64,32 @@ const CountHolder = styled(motion.div)`
   border-radius: 1rem;
   z-index: 2;
   padding: 0.5rem;
+
+  .countContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media all and (max-width: 850px) {
+    /*  width: 80%; */
+    height: auto;
+    border: 8px solid white;
+
+    /* .countContent {
+      flex-direction: row;
+      justify-content: space-evenly;
+      .leftContent {
+        h2 {
+          white-space: nowrap;
+        }
+      }
+      .rightContent {
+        width: 50%;
+      }
+    } */
+  }
+
   .numberHolder {
     display: flex;
   }
