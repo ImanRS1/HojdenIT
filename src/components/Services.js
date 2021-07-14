@@ -194,6 +194,15 @@ const ServiceObject = styled(motion.div)`
     height: 20rem;
     width: 35rem;
   }
+
+  @media all and (max-width: 850px) {
+    p {
+      font-size: 1.2rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+  }
 `
 
 const ServiceCointainer = styled(motion.div)`
