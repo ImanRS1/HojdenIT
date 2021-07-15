@@ -206,6 +206,12 @@ const ServiceObject = styled(motion.div)`
 
   @media all and (max-width: 700px) {
     width: 80%;
+    box-sizing: border-box;
+    .textContainer {
+      h2 {
+        margin-top: 0rem;
+      }
+    }
   }
 `
 
