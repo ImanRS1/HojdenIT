@@ -77,6 +77,10 @@ const AboutContainer = styled(motion.div)`
       width: auto;
       margin: 1rem;
     }
+
+    @media all and (max-width: 700px) {
+      text-align: center;
+    }
   }
 `
 
