@@ -203,6 +203,10 @@ const ServiceObject = styled(motion.div)`
       font-size: 2rem;
     }
   }
+
+  @media all and (max-width: 700px) {
+    width: 80%;
+  }
 `
 
 const ServiceCointainer = styled(motion.div)`
