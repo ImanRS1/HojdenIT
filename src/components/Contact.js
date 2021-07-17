@@ -13,7 +13,8 @@ export default function Contact() {
       <ContactWrapper variants={scrollReveal} ref={element} animate={controls}>
         <h1>KONTAKT</h1>
         <p>
-          För information och offertförfrågningar kring våra tjänster är ni varmt välkomna att kontakta oss via mail eller telefon.
+          För information och offertförfrågningar kring våra tjänster är ni
+          varmt välkomna att kontakta oss via mail eller telefon.
         </p>
         <div className="contactDetails">
           <div className="detailsText">
@@ -29,6 +30,9 @@ export default function Contact() {
                 <span className="boldDetail">E-mail:</span> HojdenIT@outlook.com
               </li>
             </ul>
+            <div className="mobileLogo">
+              <img src={companyLogo} />
+            </div>
           </div>
           <div className="detailsLogo">
             <img src={companyLogo} />
@@ -87,8 +91,6 @@ const ContactWrapper = styled(motion.div)`
     margin-bottom: 0.5rem;
   }
 
-  
-
   .contactDetails {
     width: 100%;
     height: 20rem;
@@ -113,6 +115,10 @@ const ContactWrapper = styled(motion.div)`
     .boldDetail {
       font-weight: bolder;
     }
+
+    .mobileLogo {
+      display: none;
+    }
   }
   .detailsLogo {
     position: relative;
@@ -129,12 +135,15 @@ const ContactWrapper = styled(motion.div)`
     }
   }
 
+  @media all and (max-width: 1245px) {
+    padding: 1rem;
+  }
 
-@media all and (max-width: 1245px){
-  padding: 1rem;
-
-}
-
+  @media all and (max-width: 867px) {
+    .detailsLogo {
+      display: none;
+    }
+  }
 `
 const ContactContainer = styled(motion.div)`
   position: relative;
