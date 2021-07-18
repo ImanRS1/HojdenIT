@@ -143,6 +143,18 @@ const ContactWrapper = styled(motion.div)`
     .detailsLogo {
       display: none;
     }
+
+    .detailsText {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    p {
+      margin: 0.5rem;
+    }
   }
 `
 const ContactContainer = styled(motion.div)`
