@@ -150,6 +150,12 @@ const ContactWrapper = styled(motion.div)`
       flex-direction: column;
       align-items: center;
       text-align: center;
+
+      .mobileLogo {
+        display: block;
+        position: absolute;
+        opacity: 0.5;
+      }
     }
 
     p {
