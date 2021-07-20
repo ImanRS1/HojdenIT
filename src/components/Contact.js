@@ -162,6 +162,15 @@ const ContactWrapper = styled(motion.div)`
       margin: 0.5rem;
     }
   }
+
+  @media all and (max-width: 600px) {
+    .mobileLogo {
+      img {
+        width: 80%;
+        margin-top: 2rem;
+      }
+    }
+  }
 `
 const ContactContainer = styled(motion.div)`
   position: relative;
