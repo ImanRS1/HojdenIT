@@ -178,4 +178,8 @@ const NavList = styled.div`
     cursor: pointer;
     color: #4aa0e9;
   }
+
+  @media all and (max-width: 1000px) {
+    display: none;
+  }
 `
