@@ -251,4 +251,12 @@ const BurgerMenu = styled(motion.div)`
     background: transparent;
     box-shadow: none;
   }
+
+  .burgerContainer.open .burgerButton::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+
+  .burgerContainer.open .burgerButton::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
 `
