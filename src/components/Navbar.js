@@ -44,6 +44,20 @@ export default function Navbar() {
     scroll.scrollToTop()
   }
 
+  let menuOpen = false
+  const burgerClick = () => {
+    const menuBtn = document.querySelector(".burgerButton")
+
+    if (!menuOpen) {
+      menuBtn.classList.add("open")
+      menuOpen = true
+    } else {
+      menuBtn.classList.remove("open")
+      menuOpen = false
+    }
+    console.log(menuOpen)
+  }
+
   return (
     <FadeWrapper animate="show" initial="hidden" variants={fadeIn}>
       <NavbarWrapper
@@ -114,6 +128,9 @@ export default function Navbar() {
               </li>
             </motion.ul>
           </NavList>
+          <BurgerMenu onClick={burgerClick}>
+            <div className="burgerButton"></div>
+          </BurgerMenu>
         </NavbarContainer>
       </NavbarWrapper>
     </FadeWrapper>
@@ -181,5 +198,48 @@ const NavList = styled.div`
 
   @media all and (max-width: 1000px) {
     display: none;
+  }
+`
+
+const BurgerMenu = styled(motion.div)`
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border: 3px solid #fff;
+  /*  display: none; */
+
+  .burgerButton {
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .burgerButton::before,
+  .burgerButton::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .burgerButton::before {
+    transform: translateY(-16px);
+  }
+
+  .burgerButton::after {
+    transform: translateY(16px);
   }
 `
