@@ -46,7 +46,7 @@ export default function Navbar() {
 
   let menuOpen = false
   const burgerClick = () => {
-    const menuBtn = document.querySelector(".burgerButton")
+    const menuBtn = document.querySelector(".burgerContainer")
 
     if (!menuOpen) {
       menuBtn.classList.add("open")
@@ -55,7 +55,6 @@ export default function Navbar() {
       menuBtn.classList.remove("open")
       menuOpen = false
     }
-    console.log(menuOpen)
   }
 
   return (
@@ -129,7 +128,9 @@ export default function Navbar() {
             </motion.ul>
           </NavList>
           <BurgerMenu onClick={burgerClick}>
-            <div className="burgerButton"></div>
+            <div className="burgerContainer">
+              <div className="burgerButton"></div>
+            </div>
           </BurgerMenu>
         </NavbarContainer>
       </NavbarWrapper>
@@ -202,17 +203,19 @@ const NavList = styled.div`
 `
 
 const BurgerMenu = styled(motion.div)`
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  border: 3px solid #fff;
-  /*  display: none; */
+  .burgerContainer {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border: 3px solid #fff;
+    /*  display: none; */
+  }
 
   .burgerButton {
     width: 50px;
@@ -241,5 +244,11 @@ const BurgerMenu = styled(motion.div)`
 
   .burgerButton::after {
     transform: translateY(16px);
+  }
+
+  .burgerContainer.open .burgerButton {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
   }
 `
