@@ -203,18 +203,17 @@ const NavList = styled.div`
 `
 
 const BurgerMenu = styled(motion.div)`
+  display: none;
   .burgerContainer {
     box-sizing: border-box;
     position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 80px;
     height: 80px;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
-    border: 3px solid #fff;
-    /*  display: none; */
+    display: flex;
   }
 
   .burgerButton {
@@ -258,5 +257,11 @@ const BurgerMenu = styled(motion.div)`
 
   .burgerContainer.open .burgerButton::after {
     transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+  @media all and (max-width: 1000px) {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
   }
 `
