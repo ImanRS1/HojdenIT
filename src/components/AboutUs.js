@@ -16,7 +16,6 @@ export default function AboutUs() {
       <AboutContainer>
         <CountUp render={view} />
         <div className="textContainer">
-          {/* <img src={coaxImage} className="coaxImage" /> */}
 
           <p>
             Med passion för service och installation leverarar HöjdénIT
