@@ -9,6 +9,7 @@ import { Link, animateScroll as scroll } from "react-scroll"
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
+  const [mobileView, setMobileView] = useState(false)
 
   const imgVariant = {
     scrolled: { height: "7rem" },
@@ -39,6 +40,12 @@ export default function Navbar() {
   }
 
   window.addEventListener("scroll", changeBackground)
+  window.addEventListener("resize", checkWidth)
+  window.addEventListener("onload", checkWidth)
+
+  const checkWidth = () => {
+    console.log(window.innerWidth)
+  }
 
   const scrollToTop = () => {
     scroll.scrollToTop()
