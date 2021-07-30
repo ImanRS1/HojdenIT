@@ -40,12 +40,16 @@ export default function Navbar() {
   }
 
   window.addEventListener("scroll", changeBackground)
-  window.addEventListener("resize", checkWidth)
-  window.addEventListener("onload", checkWidth)
+  window.addEventListener('resize', function(event) {
+    if(this.window.innerWidth <= 560){
+      console.log("nuuu")
+    }
+}, true);
+window.addEventListener('onload', function(event) {
+  console.log("onload: " + window.innerWidth)
+}, true);
 
-  const checkWidth = () => {
-    console.log(window.innerWidth)
-  }
+
 
   const scrollToTop = () => {
     scroll.scrollToTop()
