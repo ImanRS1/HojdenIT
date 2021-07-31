@@ -42,7 +42,7 @@ export default function Navbar() {
   window.addEventListener("scroll", changeBackground)
   window.addEventListener('resize', function(event) {
     if(this.window.innerWidth <= 560){
-      console.log("nuuu")
+      setMobileView(true)
     }
 }, true);
 window.addEventListener('onload', function(event) {
