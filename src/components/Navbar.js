@@ -21,11 +21,15 @@ export default function Navbar() {
     notScrolled: { background: "rgba(0,0,0,0)" },
   }
 
-  const companyName = {
-    scrolled: { fontSize: "1.8rem" },
+  const companyName = mobileView ? {
+      scrolled: { fontSize: "1.8rem" },
+      notScrolled: { fontSize: "2.2rem" },
+      } : {
+        scrolled: { fontSize: "1.8rem" },
     notScrolled: { fontSize: "3rem" },
-  }
+      }
 
+  
   const navListVariant = {
     scrolled: { fontSize: "1.2rem" },
     notScrolled: { fontSize: "1.5rem" },
@@ -43,6 +47,9 @@ export default function Navbar() {
   window.addEventListener('resize', function(event) {
     if(this.window.innerWidth <= 560){
       setMobileView(true)
+      console.log(mobileView)
+    }else{
+      setMobileView(false);
     }
 }, true);
 window.addEventListener('onload', function(event) {
