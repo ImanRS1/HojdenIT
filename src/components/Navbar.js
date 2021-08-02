@@ -11,7 +11,10 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileView, setMobileView] = useState(false)
 
-  const imgVariant = {
+  const imgVariant = mobileView ? {
+    scrolled: { height: "7rem" },
+    notScrolled: { height: "9rem" },
+  } : {
     scrolled: { height: "7rem" },
     notScrolled: { height: "12rem" },
   }
@@ -281,5 +284,11 @@ const BurgerMenu = styled(motion.div)`
     display: flex;
     align-items: center;
     margin: 1rem;
+  }
+
+  @media all and (max-width: 560px){
+    margin: 0rem;
+    margin-bottom: 1rem;
+    transform: scale(0.8);
   }
 `
