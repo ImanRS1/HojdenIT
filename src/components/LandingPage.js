@@ -7,7 +7,6 @@ export default function LandingPage() {
   const [stickySlogan, setStickySlogan] = useState(true)
   let initWindowHeight = window.innerHeight
   let breakPont = initWindowHeight * 0.5
-  console.log(breakPont)
 
   window.onscroll = function () {
     console.log(stickySlogan)

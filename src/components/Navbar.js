@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import cLogo from "../images/HöjdenITLogo-white.png"
 import companyLogo from "../images/HöjdenLogo.svg"
@@ -10,29 +10,33 @@ import { Link, animateScroll as scroll } from "react-scroll"
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileView, setMobileView] = useState(false)
+  const windowWidth = window.innerWidth
 
-  const imgVariant = mobileView ? {
-    scrolled: { height: "7rem" },
-    notScrolled: { height: "9rem" },
-  } : {
-    scrolled: { height: "7rem" },
-    notScrolled: { height: "12rem" },
-  }
+  const imgVariant = mobileView
+    ? {
+        scrolled: { height: "7rem" },
+        notScrolled: { height: "9rem" },
+      }
+    : {
+        scrolled: { height: "7rem" },
+        notScrolled: { height: "12rem" },
+      }
 
   const navVariant = {
     scrolled: { background: "rgba(27,27,27,0.8)" },
     notScrolled: { background: "rgba(0,0,0,0)" },
   }
 
-  const companyName = mobileView ? {
-      scrolled: { fontSize: "1.8rem" },
-      notScrolled: { fontSize: "2.2rem" },
-      } : {
+  const companyName = mobileView
+    ? {
         scrolled: { fontSize: "1.8rem" },
-    notScrolled: { fontSize: "3rem" },
+        notScrolled: { fontSize: "2.2rem" },
+      }
+    : {
+        scrolled: { fontSize: "1.8rem" },
+        notScrolled: { fontSize: "3rem" },
       }
 
-  
   const navListVariant = {
     scrolled: { fontSize: "1.2rem" },
     notScrolled: { fontSize: "1.5rem" },
@@ -47,19 +51,23 @@ export default function Navbar() {
   }
 
   window.addEventListener("scroll", changeBackground)
-  window.addEventListener('resize', function(event) {
-    if(this.window.innerWidth <= 560){
+  window.addEventListener("resize", function (event) {
+    if (this.window.innerWidth <= 560) {
       setMobileView(true)
-      console.log(mobileView)
-    }else{
-      setMobileView(false);
+    } else {
+      setMobileView(false)
     }
-}, true);
-window.addEventListener('onload', function(event) {
-  console.log("onload: " + window.innerWidth)
-}, true);
+  })
 
+  const checkMobileView = () => {
+    if (windowWidth <= 560) {
+      setMobileView(true)
+    } else {
+      setMobileView(false)
+    }
+  }
 
+  setTimeout(checkMobileView, 100)
 
   const scrollToTop = () => {
     scroll.scrollToTop()
@@ -286,7 +294,7 @@ const BurgerMenu = styled(motion.div)`
     margin: 1rem;
   }
 
-  @media all and (max-width: 560px){
+  @media all and (max-width: 560px) {
     margin: 0rem;
     margin-bottom: 1rem;
     transform: scale(0.8);
