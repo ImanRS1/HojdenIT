@@ -208,6 +208,7 @@ const NavList = styled.div`
   display: flex;
   align-items: center;
   font-family: "AllertaStencil";
+  margin-bottom: 1rem;
   ul {
     width: 100%;
     display: flex;
@@ -243,6 +244,7 @@ const BurgerMenu = styled(motion.div)`
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     display: flex;
+    margin-bottom: 1rem;
   }
 
   .burgerButton {
@@ -296,7 +298,7 @@ const BurgerMenu = styled(motion.div)`
 
   @media all and (max-width: 560px) {
     margin: 0rem;
-    margin-bottom: 1rem;
+
     transform: scale(0.8);
   }
 `
