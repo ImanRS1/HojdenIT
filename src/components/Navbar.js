@@ -10,12 +10,13 @@ import { Link, animateScroll as scroll } from "react-scroll"
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileView, setMobileView] = useState(false)
+  const [mobileViewSmall, setMobileViewSmall] = useState(false)
   const windowWidth = window.innerWidth
 
   const imgVariant = mobileView
     ? {
-        scrolled: { height: "7rem" },
-        notScrolled: { height: "9rem" },
+        scrolled: { height: "6rem" },
+        notScrolled: { height: "7rem" },
       }
     : {
         scrolled: { height: "7rem" },
@@ -29,8 +30,8 @@ export default function Navbar() {
 
   const companyName = mobileView
     ? {
-        scrolled: { fontSize: "1.8rem" },
-        notScrolled: { fontSize: "2.2rem" },
+        scrolled: { fontSize: "1.5rem" },
+        notScrolled: { fontSize: "1.6rem" },
       }
     : {
         scrolled: { fontSize: "1.8rem" },
@@ -196,6 +197,12 @@ const NavbarContainer = styled(motion.div)`
       top: 28%;
       left: 80%;
     }
+
+    @media all and(max-width: 1000px) {
+      p {
+        padding-bottom: 2rem;
+      }
+    }
   }
 
   .logoContainer:hover {
@@ -245,6 +252,11 @@ const BurgerMenu = styled(motion.div)`
     transition: all 0.5s ease-in-out;
     display: flex;
     margin-bottom: 1rem;
+
+    @media all and (max-width: 430px) {
+      padding-left: 1.7rem;
+      margin-bottom: 1rem;
+    }
   }
 
   .burgerButton {
@@ -298,7 +310,6 @@ const BurgerMenu = styled(motion.div)`
 
   @media all and (max-width: 560px) {
     margin: 0rem;
-
-    transform: scale(0.8);
+    transform: scale(0.7);
   }
 `
