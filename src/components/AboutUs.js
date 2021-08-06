@@ -2,9 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import { motion } from "framer-motion"
 import CountUp from "./CountUpNumber"
-import coaxImage2 from "../images/placeholder11.png"
-import coaxImage from "../images/coaxCable.png"
-import CableThree from "../components/cableComponents/CableThree"
 import { scrollReveal } from "../animations"
 import { useScroll } from "../components/useScroll"
 
@@ -16,7 +13,6 @@ export default function AboutUs() {
       <AboutContainer>
         <CountUp render={view} />
         <div className="textContainer">
-
           <p>
             Med passion för service och installation leverarar HöjdénIT
             helhetslösningar inom fiber och coax till våra kunder inom Stockholm
