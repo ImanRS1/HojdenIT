@@ -72,22 +72,8 @@ const CountHolder = styled(motion.div)`
   }
 
   @media all and (max-width: 850px) {
-    /*  width: 80%; */
     height: auto;
     border: 8px solid white;
-
-    /* .countContent {
-      flex-direction: row;
-      justify-content: space-evenly;
-      .leftContent {
-        h2 {
-          white-space: nowrap;
-        }
-      }
-      .rightContent {
-        width: 50%;
-      }
-    } */
   }
 
   .numberHolder {
