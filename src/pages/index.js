@@ -3,7 +3,6 @@ import styled from "styled-components"
 import LandingPage from "../components/LandingPage"
 import LoadingPage from "../components/LoadingPage"
 import Navbar from "../components/Navbar"
-import Cables from "../components/Cables"
 import About from "../components/AboutUs"
 import Footer from "../components/Footer"
 import Services from "../components/Services"
@@ -18,7 +17,6 @@ export default function Home() {
       <MainWrapper1>
         <Navbar />
         <LandingPage />
-        {/* <Cables /> */}
         <MainContainer id="section1">
           <About />
         </MainContainer>
