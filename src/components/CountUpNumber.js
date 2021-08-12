@@ -72,6 +72,7 @@ const CountHolder = styled(motion.div)`
   }
 
   @media all and (max-width: 850px) {
+    width: 15rem;
     height: auto;
     border: 8px solid white;
   }
@@ -97,7 +98,8 @@ const CountHolder = styled(motion.div)`
   }
   .coaxImage {
     position: absolute;
-    width: 27rem;
+    width: 20rem;
+    top: 5rem;
     left: -20%;
     opacity: 0.8;
     z-index: 0;
@@ -114,5 +116,12 @@ const CountHolder = styled(motion.div)`
       rgba(0, 0, 0, 0.1),
       rgba(0, 0, 0, 0)
     );
+  }
+
+  @media all and (max-width: 850px){
+    .coaxImage{
+      top: 0rem;
+      left: -2rem;
+    }
   }
 `
