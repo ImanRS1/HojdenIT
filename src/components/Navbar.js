@@ -163,6 +163,53 @@ export default function Navbar() {
             </div>
           </BurgerMenu>
         </NavbarContainer>
+
+        <NavListBurger>
+          <motion.ul
+            animate={scrolled ? "scrolled" : "notScrolled"}
+            initial={{ fontSize: "1.2rem" }}
+            variants={navListVariant}
+            transition={{ duration: 0.5 }}
+          >
+            <li>
+              <Link
+                activeClass="active"
+                to="section1"
+                spy={true}
+                smooth={true}
+                offset={-280}
+                duration={500}
+              >
+                <p>OM OSS</p>
+              </Link>
+            </li>
+
+            <li className="middleNavItem">
+              <Link
+                activeClass="active"
+                to="section2"
+                spy={true}
+                smooth={true}
+                offset={-120}
+                duration={500}
+              >
+                <p>VÅRA TJÄNSTER</p>
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="section3"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
+                <p>KONTAKT</p>
+              </Link>
+            </li>
+          </motion.ul>
+        </NavListBurger>
       </NavbarWrapper>
     </FadeWrapper>
   )
@@ -236,6 +283,40 @@ const NavList = styled.div`
 
   @media all and (max-width: 1000px) {
     display: none;
+  }
+`
+
+const NavListBurger = styled(motion.div)`
+  display: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "AllertaStencil";
+  margin-bottom: 1rem;
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .middleNavItem {
+    margin: 1rem;
+  }
+
+  p:hover {
+    cursor: pointer;
+    color: #4aa0e9;
+  }
+
+  @media all and (max-width: 1000px) {
+    display: flex;
   }
 `
 
