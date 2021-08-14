@@ -289,21 +289,23 @@ const NavList = styled.div`
 const NavListBurger = styled(motion.div)`
   display: none;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /*   display: flex; */
+  /* align-items: flex-start; */
+  justify-content: flex-end;
   font-family: "AllertaStencil";
   margin-bottom: 1rem;
   ul {
-    width: 100%;
+    /*   width: 100%; */
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
     flex-direction: column;
-    justify-content: center;
   }
   li {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin: 0 1rem 0 0;
   }
 
   .middleNavItem {
