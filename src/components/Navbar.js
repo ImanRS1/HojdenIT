@@ -289,13 +289,10 @@ const NavList = styled.div`
 const NavListBurger = styled(motion.div)`
   display: none;
   width: 100%;
-  /*   display: flex; */
-  /* align-items: flex-start; */
   justify-content: flex-end;
   font-family: "AllertaStencil";
   margin-bottom: 1rem;
   ul {
-    /*   width: 100%; */
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
