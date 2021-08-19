@@ -26,6 +26,18 @@ export const fadeIn = {
   }
 }
 
+export const fadeInNav = {
+  hidden: {
+    x: 150,
+    opacity: 0,
+},
+show: {
+    x: 0,
+    opacity: 1,
+    transition: { duration: 0.55, ease: "easeOut" },
+}
+}
+
 export const scrollReveal = {
     hidden: {
       opacity: 0,
