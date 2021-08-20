@@ -4,12 +4,13 @@ import cLogo from "../images/HöjdenITLogo-white.png"
 import companyLogo from "../images/HöjdenLogo.svg"
 import "../styles/typography.css"
 import { motion, useViewportScroll } from "framer-motion"
-import { fadeIn, fadeInFromRight } from "../animations"
+import { fadeIn, fadeInFromRight, fadeOutNav } from "../animations"
 import { Link, animateScroll as scroll } from "react-scroll"
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileView, setMobileView] = useState(false)
+  const [tabletView, setTabletView] = useState(false)
   const [burgerClicker, setBurgerClicker] = useState(false)
   const [mobileViewSmall, setMobileViewSmall] = useState(false)
   const windowWidth = window.innerWidth
@@ -70,6 +71,16 @@ export default function Navbar() {
   }
 
   setTimeout(checkMobileView, 100)
+
+  const checkTabletView = () => {
+    if (windowWidth <= 1000) {
+      setTabletView(true)
+    } else {
+      setTabletView(false)
+    }
+  }
+
+  setTimeout(checkTabletView, 100)
 
   const scrollToTop = () => {
     scroll.scrollToTop()
@@ -166,69 +177,138 @@ export default function Navbar() {
             </div>
           </BurgerMenu>
         </NavbarContainer>
-
-        {burgerClicker ? (
-          <NavListBurger>
-            <motion.ul
-              animate={scrolled ? "scrolled" : "notScrolled"}
-              initial={{ fontSize: "1.2rem" }}
-              variants={navListVariant}
-              transition={{ duration: 0.5 }}
+        {tabletView ? (
+          burgerClicker ? (
+            <NavListBurger
+              animate={"show"}
+              initial={"hidden"}
+              variants={fadeInFromRight}
             >
-              <motion.li
-                animate={"show"}
-                initial={"hidden"}
-                variants={fadeInFromRight}
+              <motion.ul
+                animate={scrolled ? "scrolled" : "notScrolled"}
+                initial={{ fontSize: "1.2rem" }}
+                variants={navListVariant}
+                transition={{ duration: 0.5 }}
               >
-                <Link
-                  activeClass="active"
-                  to="section1"
-                  spy={true}
-                  smooth={true}
-                  offset={-280}
-                  duration={500}
+                <motion.li
+                  animate={"show"}
+                  initial={"hidden"}
+                  variants={fadeInFromRight}
                 >
-                  <p>OM OSS</p>
-                </Link>
-              </motion.li>
+                  <Link
+                    activeClass="active"
+                    to="section1"
+                    spy={true}
+                    smooth={true}
+                    offset={-280}
+                    duration={500}
+                  >
+                    <p>OM OSS</p>
+                  </Link>
+                </motion.li>
 
-              <motion.li
-                className="middleNavItem"
-                animate={"show"}
-                initial={"hidden"}
-                variants={fadeInFromRight}
-              >
-                <Link
-                  activeClass="active"
-                  to="section2"
-                  spy={true}
-                  smooth={true}
-                  offset={-120}
-                  duration={500}
+                <motion.li
+                  className="middleNavItem"
+                  animate={"show"}
+                  initial={"hidden"}
+                  variants={fadeInFromRight}
                 >
-                  <p>VÅRA TJÄNSTER</p>
-                </Link>
-              </motion.li>
-              <motion.li
-                animate={"show"}
-                initial={"hidden"}
-                variants={fadeInFromRight}
-              >
-                <Link
-                  activeClass="active"
-                  to="section3"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={500}
+                  <Link
+                    activeClass="active"
+                    to="section2"
+                    spy={true}
+                    smooth={true}
+                    offset={-120}
+                    duration={500}
+                  >
+                    <p>VÅRA TJÄNSTER</p>
+                  </Link>
+                </motion.li>
+                <motion.li
+                  animate={"show"}
+                  initial={"hidden"}
+                  variants={fadeInFromRight}
                 >
-                  <p>KONTAKT</p>
-                </Link>
-              </motion.li>
-            </motion.ul>
-          </NavListBurger>
+                  <Link
+                    activeClass="active"
+                    to="section3"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                  >
+                    <p>KONTAKT</p>
+                  </Link>
+                </motion.li>
+              </motion.ul>
+            </NavListBurger>
+          ) : (
+            <NavListBurger
+              animate={"show"}
+              initial={"hidden"}
+              variants={fadeOutNav}
+            >
+              <motion.ul
+                animate={scrolled ? "scrolled" : "notScrolled"}
+                initial={{ fontSize: "1.2rem" }}
+                variants={navListVariant}
+                transition={{ duration: 0.5 }}
+              >
+                <motion.li
+                  animate={"show"}
+                  initial={"hidden"}
+                  variants={fadeInFromRight}
+                >
+                  <Link
+                    activeClass="active"
+                    to="section1"
+                    spy={true}
+                    smooth={true}
+                    offset={-280}
+                    duration={500}
+                  >
+                    <p>OM OSS</p>
+                  </Link>
+                </motion.li>
+
+                <motion.li
+                  className="middleNavItem"
+                  animate={"show"}
+                  initial={"hidden"}
+                  variants={fadeInFromRight}
+                >
+                  <Link
+                    activeClass="active"
+                    to="section2"
+                    spy={true}
+                    smooth={true}
+                    offset={-120}
+                    duration={500}
+                  >
+                    <p>VÅRA TJÄNSTER</p>
+                  </Link>
+                </motion.li>
+                <motion.li
+                  animate={"show"}
+                  initial={"hidden"}
+                  variants={fadeInFromRight}
+                >
+                  <Link
+                    activeClass="active"
+                    to="section3"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                  >
+                    <p>KONTAKT</p>
+                  </Link>
+                </motion.li>
+              </motion.ul>
+            </NavListBurger>
+          )
         ) : (
-          <div></div>
+          <div>hej</div>
         )}
       </NavbarWrapper>
     </FadeWrapper>

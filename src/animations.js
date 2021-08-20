@@ -11,6 +11,20 @@ export const fadeOut = {
   }
 };
 
+export const fadeOutNav = {
+  hidden:{
+    opacity: 1,
+  },
+  show: {
+    opacity: 0,
+    transition:{
+      duration: 1.5,
+     
+    },
+    display: "none"
+  }
+};
+
 export const fadeIn = {
   hidden:{
     opacity: 0,
@@ -78,8 +92,10 @@ export const fadeInFromRight = {
     hidden: {
         x: 150,
         opacity: 0,
+        display: "none"
     },
     show: {
+        display: "flex",
         x: 0,
         opacity: 1,
         transition: { duration: 0.55, ease: "easeOut" },
