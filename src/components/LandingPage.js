@@ -57,14 +57,13 @@ const LandingSlogon = styled(motion.div)`
     font-weight: lighter;
   }
 
-  @media all and (max-width: 1000px){
+  @media all and (max-width: 1000px) {
     margin: 1rem;
-    h1{
+    h1 {
       font-size: 2rem;
-
     }
 
-    h3{
+    h3 {
       font-size: 1rem;
     }
   }
@@ -105,6 +104,4 @@ const BackGImage = styled.div`
 
 const LandingPageWrapper = styled.div`
   height: 100vh;
-
-  /*   width: 100vw; */
 `
