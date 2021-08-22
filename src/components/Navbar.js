@@ -179,11 +179,7 @@ export default function Navbar() {
         </NavbarContainer>
         {tabletView ? (
           burgerClicker ? (
-            <NavListBurger
-              animate={"show"}
-              initial={"hidden"}
-              variants={fadeInFromRight}
-            >
+            <NavListBurger>
               <motion.ul
                 animate={scrolled ? "scrolled" : "notScrolled"}
                 initial={{ fontSize: "1.2rem" }}
@@ -203,7 +199,13 @@ export default function Navbar() {
                     offset={-280}
                     duration={500}
                   >
-                    <p>OM OSS</p>
+                    <motion.p
+                      animate={"show"}
+                      initial={"hidden"}
+                      variants={fadeInFromRight}
+                    >
+                      OM OSS
+                    </motion.p>
                   </Link>
                 </motion.li>
 
@@ -221,7 +223,13 @@ export default function Navbar() {
                     offset={-120}
                     duration={500}
                   >
-                    <p>VÅRA TJÄNSTER</p>
+                    <motion.p
+                      animate={"show"}
+                      initial={"hidden"}
+                      variants={fadeInFromRight}
+                    >
+                      VÅRA TJÄNSTER
+                    </motion.p>
                   </Link>
                 </motion.li>
                 <motion.li
@@ -237,12 +245,19 @@ export default function Navbar() {
                     offset={-100}
                     duration={500}
                   >
-                    <p>KONTAKT</p>
+                    <motion.p
+                      animate={"show"}
+                      initial={"hidden"}
+                      variants={fadeInFromRight}
+                    >
+                      KONTAKT
+                    </motion.p>
                   </Link>
                 </motion.li>
               </motion.ul>
             </NavListBurger>
           ) : (
+            /* 
             <NavListBurger
               animate={"show"}
               initial={"hidden"}
@@ -305,10 +320,11 @@ export default function Navbar() {
                   </Link>
                 </motion.li>
               </motion.ul>
-            </NavListBurger>
+            </NavListBurger> */
+            ""
           )
         ) : (
-          <div>hej</div>
+          ""
         )}
       </NavbarWrapper>
     </FadeWrapper>
