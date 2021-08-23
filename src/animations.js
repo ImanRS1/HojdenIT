@@ -14,16 +14,28 @@ export const fadeOut = {
 export const fadeOutNav = {
   hidden:{
     opacity: 1,
+    
   },
   show: {
+    x: 150,
     opacity: 0,
     transition:{
-      duration: 1.5,
-     
+      duration: 0.5, 
     },
-    display: "none"
   }
 };
+
+export const displayNoneNav = {
+  hidden: {
+    display: "flex"
+  },
+  show: {
+    display: "none",
+    transition: {
+      delay: 0.4,
+    },
+  }
+}
 
 export const fadeIn = {
   hidden:{

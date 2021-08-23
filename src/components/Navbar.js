@@ -4,7 +4,12 @@ import cLogo from "../images/HöjdenITLogo-white.png"
 import companyLogo from "../images/HöjdenLogo.svg"
 import "../styles/typography.css"
 import { motion, useViewportScroll } from "framer-motion"
-import { fadeIn, fadeInFromRight, fadeOutNav } from "../animations"
+import {
+  fadeIn,
+  fadeInFromRight,
+  fadeOutNav,
+  displayNoneNav,
+} from "../animations"
 import { Link, animateScroll as scroll } from "react-scroll"
 
 export default function Navbar() {
@@ -257,11 +262,10 @@ export default function Navbar() {
               </motion.ul>
             </NavListBurger>
           ) : (
-            /* 
             <NavListBurger
               animate={"show"}
               initial={"hidden"}
-              variants={fadeOutNav}
+              variants={displayNoneNav}
             >
               <motion.ul
                 animate={scrolled ? "scrolled" : "notScrolled"}
@@ -272,7 +276,7 @@ export default function Navbar() {
                 <motion.li
                   animate={"show"}
                   initial={"hidden"}
-                  variants={fadeInFromRight}
+                  variants={fadeOutNav}
                 >
                   <Link
                     activeClass="active"
@@ -290,7 +294,7 @@ export default function Navbar() {
                   className="middleNavItem"
                   animate={"show"}
                   initial={"hidden"}
-                  variants={fadeInFromRight}
+                  variants={fadeOutNav}
                 >
                   <Link
                     activeClass="active"
@@ -306,7 +310,7 @@ export default function Navbar() {
                 <motion.li
                   animate={"show"}
                   initial={"hidden"}
-                  variants={fadeInFromRight}
+                  variants={fadeOutNav}
                 >
                   <Link
                     activeClass="active"
@@ -320,8 +324,8 @@ export default function Navbar() {
                   </Link>
                 </motion.li>
               </motion.ul>
-            </NavListBurger> */
-            ""
+            </NavListBurger>
+            /*  "" */
           )
         ) : (
           ""
