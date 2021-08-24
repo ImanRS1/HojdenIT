@@ -325,7 +325,6 @@ export default function Navbar() {
                 </motion.li>
               </motion.ul>
             </NavListBurger>
-            /*  "" */
           )
         ) : (
           ""
