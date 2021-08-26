@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 export default function LandingPage() {
   const [stickySlogan, setStickySlogan] = useState(true)
   let initWindowHeight = window.innerHeight
-  let breakPont = initWindowHeight * 0.5
+  let breakPont = initWindowHeight * 0.7
 
   window.onscroll = function () {
     console.log(stickySlogan)
@@ -17,22 +17,31 @@ export default function LandingPage() {
     }
   }
 
+  const sloganFader = {
+    scrolled: { opacity: 1 },
+    notScrolled: { opacity: 0 },
+  }
+
   return (
     <div>
       <LandingPageWrapper>
         <BackGImage>
           <img className="bPic" src={backGImage} />
         </BackGImage>
-        <SloganWrapper>
+        <SloganWrapper
+          initial={{ y: 300, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 1.3 }}
+        >
           <LandingSlogon
-            initial={{ y: 300, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 1.3 }}
-            style={
-              stickySlogan
+            animate={stickySlogan ? "scrolled" : "notScrolled"}
+            variants={sloganFader}
+            transition={{ duration: 0.5 }}
+            /*   style={
+              stickySlogan ? { display: "block" } : { display: "none" }
                 ? { position: "fixed" }
-                : { position: "absolute", top: "95vh" }
-            }
+                : { position: "absolute", top: "95vh" } 
+            } */
           >
             <h1>HöjdénIT - effektiv, kunnig, nära</h1>
             <h3>Din helhetslösning vid fiber och coaxiala installationer.</h3>
@@ -47,7 +56,7 @@ const LandingSlogon = styled(motion.div)`
   z-index: 3;
   font-family: "AllertaStencil";
   font-size: 1.2rem;
-
+  position: fixed;
   text-transform: uppercase;
   h1 {
     font-weight: lighter;
