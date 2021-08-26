@@ -36,7 +36,7 @@ export default function LandingPage() {
           <LandingSlogon
             animate={stickySlogan ? "scrolled" : "notScrolled"}
             variants={sloganFader}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
             /*   style={
               stickySlogan ? { display: "block" } : { display: "none" }
                 ? { position: "fixed" }
@@ -113,4 +113,5 @@ const BackGImage = styled.div`
 
 const LandingPageWrapper = styled.div`
   height: 100vh;
+  overflow: hidden;
 `
