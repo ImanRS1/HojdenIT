@@ -200,13 +200,14 @@ export default function Navbar() {
                     to="section1"
                     spy={true}
                     smooth={true}
-                    offset={-280}
+                    offset={-130}
                     duration={500}
                   >
                     <motion.p
                       animate={"show"}
                       initial={"hidden"}
                       variants={fadeInFromRight}
+                      onClick={burgerClick}
                     >
                       OM OSS
                     </motion.p>
@@ -231,6 +232,7 @@ export default function Navbar() {
                       animate={"show"}
                       initial={"hidden"}
                       variants={fadeInFromRight}
+                      onClick={burgerClick}
                     >
                       VÅRA TJÄNSTER
                     </motion.p>
@@ -253,6 +255,7 @@ export default function Navbar() {
                       animate={"show"}
                       initial={"hidden"}
                       variants={fadeInFromRight}
+                      onClick={burgerClick}
                     >
                       KONTAKT
                     </motion.p>
