@@ -225,7 +225,7 @@ export default function Navbar() {
                     to="section2"
                     spy={true}
                     smooth={true}
-                    offset={-120}
+                    offset={-135}
                     duration={500}
                   >
                     <motion.p
