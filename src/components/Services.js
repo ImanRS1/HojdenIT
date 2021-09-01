@@ -189,7 +189,6 @@ const ServiceObject = styled(motion.div)`
   }
 
   @media all and (max-width: 1150px) {
-    /* flex-direction: row; */
     margin: 1rem;
     height: 20rem;
     width: 35rem;
