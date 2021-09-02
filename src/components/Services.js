@@ -212,6 +212,14 @@ const ServiceObject = styled(motion.div)`
       }
     }
   }
+
+  @media all and (max-width: 650px) {
+    height: 25rem;
+  }
+
+  @media all and (max-width: 380px) {
+    min-height: 30rem;
+  }
 `
 
 const ServiceCointainer = styled(motion.div)`
