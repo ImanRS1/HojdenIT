@@ -8,9 +8,11 @@ export default function Footer() {
     <FooterWrapper>
       <FooterContainer>
         <p className="copyrightText"> &copy; HöjdénIT 2021</p>
+        <a href="https://imanrs1.github.io/Iman-Portfolio/#/">
         <p className="developerText">
           Developed by <img src={developerImage} />
         </p>
+        </a>
       </FooterContainer>
     </FooterWrapper>
   )
@@ -39,6 +41,9 @@ const FooterContainer = styled(motion.div)`
   }
   p {
     padding: 0.5rem;
+  }
+  a{
+    text-decoration: none;
   }
 `
 
