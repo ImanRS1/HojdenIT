@@ -37,11 +37,6 @@ export default function LandingPage() {
             animate={stickySlogan ? "scrolled" : "notScrolled"}
             variants={sloganFader}
             transition={{ duration: 0.3 }}
-            /*   style={
-              stickySlogan ? { display: "block" } : { display: "none" }
-                ? { position: "fixed" }
-                : { position: "absolute", top: "95vh" } 
-            } */
           >
             <h1>HöjdénIT - effektiv, kunnig, nära</h1>
             <h3>Din helhetslösning vid fiber och coaxiala installationer.</h3>
