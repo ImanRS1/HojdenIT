@@ -104,10 +104,8 @@ export const fadeInFromRight = {
     hidden: {
         x: 150,
         opacity: 0,
-        /* display: "none" */
     },
     show: {
-        /* display: "flex", */
         x: 0,
         opacity: 1,
         transition: { duration: 0.55, ease: "easeOut" },
