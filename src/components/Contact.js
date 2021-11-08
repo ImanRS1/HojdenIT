@@ -31,17 +31,17 @@ export default function Contact() {
               </li>
             </ul>
             <div className="mobileLogo">
-              <img src={companyLogo} />
+              <img src={companyLogo} alt="Company Logo" />
             </div>
           </div>
-          <div className="detailsLogo">
+          <div className="detailsLogo" alt="Details Logo">
             <img src={companyLogo} />
             <p>HöjdénIT</p>
           </div>
         </div>
       </ContactWrapper>
       <CardImageContainer>
-        <img src={cardImage} className="CardImage" />
+        <img src={cardImage} className="CardImage" alt="Image of communication cards" />
       </CardImageContainer>
     </ContactContainer>
   )
