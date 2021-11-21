@@ -90,18 +90,15 @@ export default function Navbar() {
     scroll.scrollToTop()
   }
 
-  let menuOpen = false
   const burgerClick = () => {
     const menuBtn = document.querySelector(".burgerContainer")
 
     if (!burgerClicker) {
       menuBtn.classList.add("open")
       setBurgerClicker(true)
-      /* menuOpen = true */
     } else {
       menuBtn.classList.remove("open")
       setBurgerClicker(false)
-      /* menuOpen = false */
     }
   }
 
@@ -119,6 +116,7 @@ export default function Navbar() {
               animate={scrolled ? "scrolled" : "notScrolled"}
               variants={imgVariant}
               transition={{ duration: 0.5 }}
+              alt="Company logo"
             />
             <motion.p
               animate={scrolled ? "scrolled" : "notScrolled"}

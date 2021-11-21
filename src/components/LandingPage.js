@@ -9,7 +9,6 @@ export default function LandingPage() {
   let breakPont = initWindowHeight * 0.7
 
   window.onscroll = function () {
-    console.log(stickySlogan)
     if (initWindowHeight - window.scrollY < breakPont) {
       setStickySlogan(false)
     } else {
