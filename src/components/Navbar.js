@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import companyLogo from "../images/HöjdenLogo.svg"
 import "../styles/typography.css"
-import { motion, useViewportScroll } from "framer-motion"
+import { motion } from "framer-motion"
 import {
   fadeIn,
   fadeInFromRight,
