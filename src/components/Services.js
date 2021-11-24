@@ -29,7 +29,7 @@ export default function Services() {
         <h1>VÅRA TJÄNSTER</h1>
         <ServiceCointainer>
           <ServiceObject>
-            <img src={socketImage} />
+            <img src={socketImage} alt='Offered service' />
 
             <div className="textContainer">
               <h2>Header</h2>
@@ -40,30 +40,7 @@ export default function Services() {
             </div>
           </ServiceObject>
           <ServiceObject>
-            <img src={fiberCables} />
-
-            <div className="textContainer">
-              <h2>Header</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
-                repellendus?
-              </p>
-            </div>
-          </ServiceObject>
-
-          <ServiceObject>
-            <img src={oneExpert} />
-
-            <div className="textContainer">
-              <h2>Header</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
-                repellendus?
-              </p>
-            </div>
-          </ServiceObject>
-          <ServiceObject>
-            <img src={coaxImage} />
+            <img src={fiberCables} alt='Offered service'/>
 
             <div className="textContainer">
               <h2>Header</h2>
@@ -75,7 +52,7 @@ export default function Services() {
           </ServiceObject>
 
           <ServiceObject>
-            <img src={coaxImage} />
+            <img src={oneExpert} alt='Offered service'/>
 
             <div className="textContainer">
               <h2>Header</h2>
@@ -86,7 +63,30 @@ export default function Services() {
             </div>
           </ServiceObject>
           <ServiceObject>
-            <img src={coaxImage} />
+            <img src={coaxImage} alt='Offered service'/>
+
+            <div className="textContainer">
+              <h2>Header</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
+                repellendus?
+              </p>
+            </div>
+          </ServiceObject>
+
+          <ServiceObject>
+            <img src={coaxImage} alt='Offered service'/>
+
+            <div className="textContainer">
+              <h2>Header</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
+                repellendus?
+              </p>
+            </div>
+          </ServiceObject>
+          <ServiceObject>
+            <img src={coaxImage} alt='Offered service'/>
 
             <div className="textContainer">
               <h2>Header</h2>
@@ -124,7 +124,7 @@ export default function Services() {
         </ServiceCointainer>
       </ServicesWrapper>
       <FiberImageContainerNew>
-        <img src={fiberImage} className="fiberImage" />
+        <img src={fiberImage} className="fiberImage" alt='Fiber optics'/>
       </FiberImageContainerNew>
       {/*  <FiberImageContainer>
         <img src={fiberImage} className="fiberImage" />
