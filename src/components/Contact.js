@@ -35,13 +35,13 @@ export default function Contact() {
             </div>
           </div>
           <div className="detailsLogo" alt="Details Logo">
-            <img src={companyLogo} />
+            <img src={companyLogo} alt='Logo of the company'/>
             <p>HöjdénIT</p>
           </div>
         </div>
       </ContactWrapper>
       <CardImageContainer>
-        <img src={cardImage} className="CardImage" alt="Image of communication cards" />
+        <img src={cardImage} className="CardImage" alt="Communication cards" />
       </CardImageContainer>
     </ContactContainer>
   )
