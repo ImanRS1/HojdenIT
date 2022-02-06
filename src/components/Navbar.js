@@ -16,7 +16,7 @@ export default function Navbar() {
   const [mobileView, setMobileView] = useState(false)
   const [tabletView, setTabletView] = useState(false)
   const [burgerClicker, setBurgerClicker] = useState(false)
-  const [mobileViewSmall, setMobileViewSmall] = useState(false)
+  // const [mobileViewSmall, setMobileViewSmall] = useState(false)
   const windowWidth = window.innerWidth
 
   const imgVariant = mobileView

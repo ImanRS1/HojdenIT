@@ -25,7 +25,7 @@ export default function LandingPage() {
     <div>
       <LandingPageWrapper>
         <BackGImage>
-          <img className="bPic" src={backGImage} />
+          <img className="bPic" src={backGImage} alt={"fiber optics"}/>
         </BackGImage>
         <SloganWrapper
           initial={{ y: 300, opacity: 0 }}

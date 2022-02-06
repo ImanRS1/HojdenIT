@@ -10,7 +10,8 @@ export default function LoadingPage() {
   return (
     <Wrapper inital="hidden" animate="show" variants={fadeOut}>
       <LogoAndNameContainer>
-        <img src={companyLogo} />
+        <img src={companyLogo} 
+        alt={"company logo"}/>
         <p>Höjdén IT</p>
         <LoadingCircle />
       </LogoAndNameContainer>

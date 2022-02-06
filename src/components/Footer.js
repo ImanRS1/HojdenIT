@@ -10,7 +10,7 @@ export default function Footer() {
         <p className="copyrightText"> &copy; HöjdénIT 2022</p>
         <a href="https://imanrs1.github.io/Iman-Portfolio/#/">
         <p className="developerText">
-          Developed by <img src={developerImage} />
+          Developed by <img src={developerImage} alt={"developer symbol"}/>
         </p>
         </a>
       </FooterContainer>

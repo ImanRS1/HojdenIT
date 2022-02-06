@@ -6,7 +6,7 @@ export default function LoadingCircle() {
   return (
     <CircleHolder>
       <svg
-        stroke-width="12"
+        strokeWidth="12"
         width="800"
         height="600"
         xmlns="http://www.w3.org/2000/svg"

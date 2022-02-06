@@ -28,7 +28,7 @@ export default function CountUpNumber(view) {
   return (
     <CountHolder>
       <div className="coaxImageContainer">
-        <img src={coaxImage} className="coaxImage" />
+        <img src={coaxImage} className="coaxImage" alt="coaxial cables" />
       </div>
       <div className="countContent">
         <div className="leftContent">
