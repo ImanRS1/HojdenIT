@@ -32,10 +32,9 @@ export default function Services() {
             <img src={socketImage} alt='Offered service' />
 
             <div className="textContainer">
-              <h2>Header</h2>
+              <h2>Vägguttag</h2>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
-                repellendus?
+                Felsökning, installation och uppgradering av vägguttag. Installation av dimmers, etc.
               </p>
             </div>
           </ServiceObject>
@@ -43,10 +42,9 @@ export default function Services() {
             <img src={fiberCables} alt='Offered service'/>
 
             <div className="textContainer">
-              <h2>Header</h2>
+              <h2>Fiberoptik</h2>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
-                repellendus?
+                Installation och reparation av fiberoptik. Felsökning av kommunikationskort.
               </p>
             </div>
           </ServiceObject>
