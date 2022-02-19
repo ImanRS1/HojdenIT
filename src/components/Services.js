@@ -53,10 +53,9 @@ export default function Services() {
             <img src={oneExpert} alt='Offered service'/>
 
             <div className="textContainer">
-              <h2>Header</h2>
+              <h2>Nätverksprestanda</h2>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
-                repellendus?
+                Verifiering av nätverksprestanda, felsökning, upptäckt av signalstörningar.
               </p>
             </div>
           </ServiceObject>
