@@ -63,10 +63,9 @@ export default function Services() {
             <img src={coaxImage} alt='Offered service'/>
 
             <div className="textContainer">
-              <h2>Header</h2>
+              <h2>Koaxialkablar</h2>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
-                repellendus?
+                Installation, service och felsökning av koaxiala kablar.
               </p>
             </div>
           </ServiceObject>
