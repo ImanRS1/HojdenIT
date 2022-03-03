@@ -14,6 +14,7 @@ import socketImage from "../images/socket2.jpg"
 import oneExpert from "../images/oneexpert.png"
 import coaxImage from "../images/coaximage.png"
 import fiberCables from "../images/fiberCables.jpg"
+import circuitBreakers from "../images/placeholder1.jpg"
 
 export default function Services() {
   const [element, controls] = useScroll()
@@ -65,19 +66,18 @@ export default function Services() {
             <div className="textContainer">
               <h2>Koaxialkablar</h2>
               <p>
-                Installation, service och felsökning av koaxiala kablar.
+                Installation, service och felsökning av koaxiala kablar. Upprättning av digitalTV.
               </p>
             </div>
           </ServiceObject>
 
           <ServiceObject>
-            <img src={coaxImage} alt='Offered service'/>
+            <img src={circuitBreakers} alt='Offered service'/>
 
             <div className="textContainer">
-              <h2>Header</h2>
+              <h2>Automatsäkringar</h2>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex,
-                repellendus?
+                Installation av jordfelsbrytare och automatsäkringar, felsökning och modifieringar.
               </p>
             </div>
           </ServiceObject>
